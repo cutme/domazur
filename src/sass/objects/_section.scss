@@ -1,0 +1,12 @@
+.o-section {
+	@extend %clear;
+	margin-bottom: 130px;
+	
+	&--nobottommargin {
+		margin-bottom: 0;
+	}
+	
+	&--boxes {
+		margin-bottom: 70px;
+	}
+}

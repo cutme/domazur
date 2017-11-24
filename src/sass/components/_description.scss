@@ -1,0 +1,50 @@
+.c-description {
+	&__price {
+		font-size: rem(18);
+	}
+
+	&__row {
+		margin-bottom: 25px;
+	
+		&--cta {
+			@extend %flex;
+			@extend %flex-y;
+			margin-bottom: 25px;			
+		}
+		
+		&--details {
+			> div {
+				display: inline-block;
+				margin: 0 25px 10px 0;
+				
+				img {
+					display: inline-block;
+					margin-right: 5px;
+					vertical-align: middle;
+				}
+
+				span {
+					font-size: rem(15);
+				}
+			}
+		}
+
+		&--description {
+			@extend %rel;
+			padding-bottom: 25px;
+			font-size: rem(15);
+			color: $c-gray-1;
+			
+			&:after {
+				@extend %abs-after;
+				bottom: 0;
+				width: 260px; height: 1px;
+				background-color: $c-gray-3;
+			}
+		}
+		
+		&--print {
+			padding-top: 20px;
+		}
+	}
+}

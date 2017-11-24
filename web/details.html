@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<meta name="robots" content="noindex, nofollow">
+
+	<title>domazur</title>	
+
+	<script src="js/pace.min.js"></script>
+	<script>
+	
+		document.documentElement.style.display = 'none';
+	
+		var loadMyCSS = function() {
+			var style = document.createElement('style'),
+				url = "css/style.css",
+			    head = document.getElementsByTagName('head')[0],
+			    link = document.createElement('link');
+			
+			link.type = "text/css"; 
+			link.rel = "stylesheet";
+			link.href = url;
+	
+			head.appendChild(link);
+	
+			link.onload = function () {
+				document.documentElement.removeAttribute('style');
+/*
+				setTimeout(function() {
+					setHeights();
+				}, 10);
+*/
+			};
+		}
+	
+		Pace.on('start', function() {
+			loadMyCSS();
+		});
+		
+		Pace.on('done', function() {
+			classie.remove( document.getElementsByTagName('body')[0], 'no-overflow' );
+			
+			ctme.Flags.init();
+			ctme.Carousel.init();
+			ctme.Helper.nice();
+			ctme.Search.init();
+
+		});
+	
+	</script>
+</head>
+
+<style>
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .gallery-thumbs .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+  </style>
+<body class="no-overflow">
+
+	<div class="o-container">
+
+		<div class="c-top">
+			<div class="o-wrap o-wrap--base">
+				<a href="index.html" class="c-logo">
+					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
+				</a>
+				
+								<div class="c-top__toolbar">
+					<ul class="c-toolbar">
+						<li class="c-toolbar__item">
+							<a href="mailto:info@domazurfrance.com">
+								<i class="icon-e-mail"></i> info@domazurfrance.com
+							</a>
+						</li>
+						
+						<li class="c-toolbar__item">
+							<i class="icon-phone"></i>
+							<a href="#" class="c-toolbar__phone">0033 640615143</a>
+							<a href="#" class="c-toolbar__phone">0033 630811003</a>
+						</li>
+					</ul>
+					
+					<div class="c-lang">
+						<ul class="c-flags c-flags--current" id="currentFlag">
+							<li class="c-flags__item">
+								<i class="c-flags__item c-flags__item--en"></i>
+							</li>
+						</ul>
+
+						<ul class="c-flags c-flags--cloud" id="flags">
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ch"></i> <span>中文</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ru"></i> <span>Русский</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--pl"></i> <span>Polski</span>
+								</a>
+							</li>
+							
+							<li class="is-active">
+								<a href="#">
+									<i class="c-flags__item c-flags__item--en"></i> <span>English</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--de"></i> <span>Deutsch</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--fr"></i> <span>Français</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				
+				<nav class="c-nav c-nav--top">
+				
+					
+						<ul>
+							<li class="is-active">
+								<a href="index.html">Home</a>
+							</li>
+							
+							<li class="@@about">
+								<a href="about.html">About us</a>
+							</li>
+							
+							<li class="@@buy">
+								<a href="buy.html">Buy</a>
+							</li>
+							
+							<li class="@@rent">
+								<a href="rent.html">Rent</a>
+							</li>
+							
+							<li class="@@services">
+								<a href="services.html">Services</a>
+							</li>
+							
+							<li class="@@collaboration">
+								<a href="collaboration.html">Collaboration</a>
+							</li>
+							
+							<li class="@@partners">
+								<a href="partners.html">Partners</a>
+							</li>
+							
+							<li class="@@contact">
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+
+
+				</nav>
+			</div>
+		</div>
+
+		
+		<div class="c-leadphoto c-leadphoto--home">
+		
+			
+		
+			<picture>
+				<source srcset="img/details@2565.jpg" media="(min-width: 1441px)">
+				<source srcset="img/home@1440.jpg" media="(min-width: 1025px)">
+				<source srcset="img/home@1024.jpg" media="(min-width: 321px)">
+				
+				<img srcset="img/home@320.jpg" alt="">
+			</picture>
+		</div>
+
+
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+				<div class="c-breadcrumbs">
+					<a href="index.html">Home</a> <a href="buy.html">Buy</a> <a href="buy.html" class="no-line">France</a> <span> - Mont Boron</span>
+				</div>
+		
+				<div class="c-details">
+					<div class="c-details__col">
+						<div class="c-gallery" id="thumbsGallery">
+						
+							<div class="swiper-container gallery-top">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="img/gallery-01.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-02.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-03.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-04.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-05.jpg" alt="" width="675" height="506">
+									</div>
+								</div>
+							</div>
+						
+							<div class="swiper-container gallery-thumbs">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="img/gallery-01.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-02.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-03.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-04.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-05.jpg" alt="" width="675" height="506">
+									</div>
+								</div>
+							</div>
+							
+							<div class="swiper-arrows">
+								<div class="swiper-button swiper-button--prev icon-arrow--left"></div>
+								<div class="swiper-button swiper-button--next icon-arrow--right"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="c-details__col">
+					
+						<div class="c-description">
+							<div class="c-description__row c-description__row--title">
+								<h2 class="c-featured__lead">Nice Mont Boron</h2>
+								<p class="o-meta">
+									<span>Reference:</span> <span>DA 1264</span>
+								</p>
+							</div>
+							
+							<div class="c-description__row c-description__row--cta">
+								<p class="c-description__price">Price: <span class="c-description__amount">1.450,000 &euro;</span></p>
+							</div>
+							
+							<div class="c-description__row c-description__row--description">
+								<div class="c-article">
+									<h4>Description</h4>
+
+									<p>
+Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of land of 2 800 sqm. Beautiful view overlooking the Bay of Cap Ferrat and Bay of Angels in Nice.  Several parking spaces.
+									</p>
+									
+									
+									<h4>Details</h4>
+
+									<ul>
+										<li>
+											<span class="text-orange">Consisting of Main level:</span> Living room with fire place, Dining room, Master Be droom with bathroom, Full equipped kitchen, Guest toilet, Study room
+										</li>
+										
+										<li>
+											<span class="text-orange">Following levels:</span> 4 bedrooms, 2 bathro oms, 1 shower room
+										</li>
+
+										<li>
+											<span class="text-orange">Additionally:</span> Pool, Pool house, Fireplace, Double glazing, Laundry room, Auto  matic gate, Quiet area, Air conditioning.
+										</li>
+									</ul>
+									
+									<span class="text-orange">RENT:</span> on request
+								</div>
+							</div>
+							
+							<div class="c-description__row c-description__row--details">
+								<div>
+									<img src="img/icons/yardage.png" alt="yardage" width="28" height="30">
+									<span>300.00 m<sup>2</sup></span>
+								</div>
+								
+								<div>
+									<img src="img/icons/yardage.png" alt="yardage" width="30" height="30">
+									<span>2800.00 m<sup>2</sup></span>
+								</div>
+								
+								<div>
+									<img src="img/icons/bedroom.png" alt="bedroom" width="30" height="30">
+									<span>5</span>
+								</div>
+								
+								<div>
+									<img src="img/icons/bathroom.png" alt="bathroom" width="22" height="30">
+									<span>4</span>
+								</div>
+								
+								<div>
+									<img src="img/icons/pool.png" alt="bathroom" width="30" height="30">
+									<span>Pool</span>
+								</div>
+								
+								<div>
+									<img src="img/icons/sea.png" alt="sea view" width="30" height="30">
+									<span>Sea view</span>
+								</div>
+	
+								<div>
+									<img src="img/icons/360.png" alt="360" width="30" height="30">
+									<span>Virtual tour 360<sup>o</sup></span>
+								</div>
+								
+								<div>
+									<img src="img/icons/pool.png" alt="Parking space" width="30" height="30">
+									<span>Parking space</span>
+								</div>
+							</div>
+							
+							<div class="c-description__row c-description__row--print">
+								<a href="#" class="o-btn o-btn--border">Print this offer</a>
+							</div>
+						</div><!-- /description -->
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		
+		<div class="c-contactform">
+			<div class="c-contactform__content">
+			
+				<h3 class="c-contactform__title">Contact Form</h3>
+				<h4 class="c-contactform__subtitle">Required fields are followed by *</h4>
+				
+				<div class="c-form">
+					<div class="c-form__row">
+						<label>Name *</label>
+						<input type="text" class="c-form__field">
+					</div>
+					
+					<div class="c-form__row">
+						<label>Phone</label>
+						<input type="text" class="c-form__field">
+					</div>
+					
+					<div class="c-form__row">
+						<label>E-mail *</label>
+						<input type="email" class="c-form__field">
+					</div>
+					
+					<div class="c-form__row">
+						<label>Subject *</label>
+						<input type="text" class="c-form__field">
+					</div>
+					
+					<div class="c-form__row">
+						<label>Message *</label>
+						<textarea class="c-form__field c-form__field--textarea" placeholder="Message"></textarea>
+					</div>
+					
+					<div class="c-form__row c-form__row--submit">
+						<button type="submit" class="o-btn o-btn--border o-btn--medium">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+			
+				<header class="o-header">
+					<h2>Buy - our recommended</h2>
+		
+					<div class="o-header__line">
+						<div class="o-header__lead">
+							<img src="img/icons/buy.png" alt="" width="52" height="33">
+						</div>
+					</div>
+				</header>
+				
+				<div class="swiper-container" id="buy">
+					<div class="swiper-wrapper">
+				
+						<div class="swiper-slide">
+							
+				<div class="c-box">
+					<div class="c-box__header c-box__header--top">
+						<p class="c-box__title c-box__title--big">Moraira</p>
+						<p class="c-box__title c-box__title--small">Costa Blanca</p>
+					</div>
+					
+					<div class="c-box__frame">
+						<div class="c-box__photo">
+							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
+							<img src="img/buy-01.jpg" alt="" width="290" height="215">
+						</div>
+						
+						<div class="c-box__details">
+							<div class="c-box__info">
+								<p class="c-box__price">Price on request</p>
+								<p class="o-meta o-meta--small">
+									<span>Ref:</span> <span>DA 369</span>
+								</p>
+							</div>
+							
+							<div class="c-box__btn">
+								<a href="#" class="o-btn o-btn--border">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+						</div>
+				
+						<div class="swiper-slide">
+											<div class="c-box">
+					<div class="c-box__header c-box__header--top">
+						<p class="c-box__title c-box__title--big">Requebrune Cap Martin</p>
+						<p class="c-box__title c-box__title--small">France</p>
+					</div>
+					
+					<div class="c-box__frame">
+						<div class="c-box__photo">
+							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
+							<img src="img/buy-02.jpg" alt="" width="290" height="215">
+						</div>
+						
+						<div class="c-box__details">
+							<div class="c-box__info">
+								<p class="c-box__price">&euro; 1.795 000 </p>
+								<p class="o-meta o-meta--small">
+									<span>Ref:</span> <span>DA 369</span>
+								</p>
+							</div>
+							
+							<div class="c-box__btn">
+								<a href="#" class="o-btn o-btn--border">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+						</div>
+				
+						<div class="swiper-slide">
+											<div class="c-box">
+					<div class="c-box__header c-box__header--top">
+						<p class="c-box__title c-box__title--big">Nice Mont Boron</p>
+						<p class="c-box__title c-box__title--small">France</p>
+					</div>
+					
+					<div class="c-box__frame">
+						<div class="c-box__photo">
+							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
+							<img src="img/buy-03.jpg" alt="" width="290" height="215">
+						</div>
+						
+						<div class="c-box__details">
+							<div class="c-box__info">
+								<p class="c-box__price">Price on request</p>
+								<p class="o-meta o-meta--small">
+									<span>Ref:</span> <span>DA 369</span>
+								</p>
+							</div>
+							
+							<div class="c-box__btn">
+								<a href="#" class="o-btn o-btn--border">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+						</div>
+				
+						<div class="swiper-slide">
+											<div class="c-box">
+					<div class="c-box__header c-box__header--top">
+						<p class="c-box__title c-box__title--big">Villefranche sur Mer</p>
+						<p class="c-box__title c-box__title--small">Costa Blanca</p>
+					</div>
+					
+					<div class="c-box__frame">
+						<div class="c-box__photo">
+							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
+							<img src="img/buy-04.jpg" alt="" width="290" height="215">
+						</div>
+						
+						<div class="c-box__details">
+							<div class="c-box__info">
+								<p class="c-box__price">&euro; 545 000</p>
+								<p class="o-meta o-meta--small">
+									<span>Ref:</span> <span>DA 369</span>
+								</p>
+							</div>
+							
+							<div class="c-box__btn">
+								<a href="#" class="o-btn o-btn--border">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+						</div>
+
+						<div class="swiper-slide">
+							
+				<div class="c-box">
+					<div class="c-box__header c-box__header--top">
+						<p class="c-box__title c-box__title--big">Moraira</p>
+						<p class="c-box__title c-box__title--small">Costa Blanca</p>
+					</div>
+					
+					<div class="c-box__frame">
+						<div class="c-box__photo">
+							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
+							<img src="img/buy-01.jpg" alt="" width="290" height="215">
+						</div>
+						
+						<div class="c-box__details">
+							<div class="c-box__info">
+								<p class="c-box__price">Price on request</p>
+								<p class="o-meta o-meta--small">
+									<span>Ref:</span> <span>DA 369</span>
+								</p>
+							</div>
+							
+							<div class="c-box__btn">
+								<a href="#" class="o-btn o-btn--border">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+						</div>
+				
+						<div class="swiper-slide">
+											<div class="c-box">
+					<div class="c-box__header c-box__header--top">
+						<p class="c-box__title c-box__title--big">Requebrune Cap Martin</p>
+						<p class="c-box__title c-box__title--small">France</p>
+					</div>
+					
+					<div class="c-box__frame">
+						<div class="c-box__photo">
+							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
+							<img src="img/buy-02.jpg" alt="" width="290" height="215">
+						</div>
+						
+						<div class="c-box__details">
+							<div class="c-box__info">
+								<p class="c-box__price">&euro; 1.795 000 </p>
+								<p class="o-meta o-meta--small">
+									<span>Ref:</span> <span>DA 369</span>
+								</p>
+							</div>
+							
+							<div class="c-box__btn">
+								<a href="#" class="o-btn o-btn--border">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+						</div>
+				
+					</div><!-- /swiper-wrapper -->
+					
+					<div class="swiper-pagination"></div>
+				</div><!-- /swiper-container -->
+			</div><!-- /section -->
+		</div>
+
+				
+				<div class="o-section">	
+			<header class="o-header">
+				<h2>Featured offers</h2>
+				<div class="o-header__line">
+					<div class="o-header__lead">
+						<img src="img/icons/featured.png" alt="" width="53" height="40">
+					</div>
+				</div>
+			</header>
+			
+			<ul class="c-featured">
+				<li class="c-featured__row">
+					<div class="c-featured__item c-featured__item--photo">
+						<img src="img/featured-01@2565.jpg" alt="" width="1282" height="506">
+					</div>
+					
+					<div class="c-featured__item c-featured__item--description">
+
+						<div class="c-description">
+							<div class="c-description__row c-description__row--title">
+								<h2 class="c-featured__lead">LONDON - Temple</h2>
+								<p class="o-meta">
+									<span>Reference:</span> <span>DA 746</span>
+								</p>
+							</div>
+							
+							<div class="c-description__row c-description__row--cta">
+								<a href="details.html" class="o-btn o-btn--border">Details</a>
+								<p class="c-description__price">&euro; 1.450,000</p>
+							</div>
+							
+							<div class="c-description__row c-description__row--description">
+								A new residence will deliver a new height in quality, elegance and exclusivity in Cap d’Antibes.
+								Beautiful landscaped gardens, tennis court and a spectacular pool, spa and gym area.
+								Private underground car park together with a gated security entrance.
+							</div>
+							
+							<div class="c-description__row c-description__row--details">
+								<div>
+									<img src="img/icons/yardage.png" alt="yardage" width="28" height="30">
+									<span>425.00 m<sup>2</sup></span>
+								</div>
+								
+								<div>
+									<img src="img/icons/bedroom.png" alt="bedroom" width="30" height="30">
+									<span>4</span>
+								</div>
+								
+								<div>
+									<img src="img/icons/bathroom.png" alt="bathroom" width="22" height="30">
+									<span>4</span>
+								</div>
+	
+								<div>
+									<img src="img/icons/360.png" alt="360" width="30" height="30">
+									<span>Virtual tour 360<sup>o</sup></span>
+								</div>
+							</div>
+						</div><!-- /description -->
+
+					</div>
+				</li>
+				
+				<li class="c-featured__row">
+					<div class="c-featured__item c-featured__item--photo">
+						<img src="img/featured-02@2565.jpg" alt="" width="1282" height="506">
+					</div>
+					
+					<div class="c-featured__item c-featured__item--description">
+
+						<div class="c-description">							
+							<div class="c-description__row c-description__row--title">
+								<h2 class="c-featured__lead">Dubai - Executive Towers</h2>
+								<p class="o-meta">
+									<span>Reference:</span> <span>DA 379</span>
+								</p>
+							</div>
+							
+							<div class="c-description__row c-description__row--cta">
+								<a href="details.html" class="o-btn o-btn--border">Details</a>
+								<p class="c-description__price">&euro; 1 700 000</p>
+							</div>
+							
+							<div class="c-description__row c-description__row--description">
+								A new residence will deliver a new height in quality, elegance and exclusivity in Cap d’Antibes.
+								Beautiful landscaped gardens, tennis court and a spectacular pool, spa and gym area.
+								Private underground car park together with a gated security entrance.
+							</div>
+	
+							<div class="c-description__row c-description__row--details">
+								<div>
+									<img src="img/icons/yardage.png" alt="yardage" width="28" height="30">
+									<span>425.00 m<sup>2</sup></span>
+								</div>
+								
+								<div>
+									<img src="img/icons/bedroom.png" alt="bedroom" width="30" height="30">
+									<span>4</span>
+								</div>
+								
+								<div>
+									<img src="img/icons/bathroom.png" alt="bathroom" width="22" height="30">
+									<span>4</span>
+								</div>
+							</div>
+						</div><!-- /description -->
+
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		
+		
+				<div class="o-section">
+			<header class="o-header">
+				<h2>Partnerships</h2>
+				<div class="o-header__line">
+					<div class="o-header__lead">
+						<img src="img/icons/partners.png" alt="" width="59" height="40">
+					</div>
+				</div>
+			</header>
+
+			<div class="c-partners">
+			
+				<img src="img/partner-01.png" alt="partner-01" width="240" height="78">
+				<img src="img/partner-02.png" alt="partner-02" width="240" height="70">
+				<img src="img/partner-03.png" alt="partner-03" width="240" height="70">
+				<img src="img/partner-04.png" alt="partner-04" width="240" height="70">
+				<img src="img/partner-05.png" alt="partner-05" width="240" height="70">
+						
+			</div>
+		</div>
+
+		
+		
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section o-section--boxes">
+			
+				<header class="o-header">
+					<h2>Rent a Car, Yacht or Jet charter</h2>
+		
+					<div class="o-header__line">
+						<div class="o-header__lead o-header__lead--text">We will help You by hire transport</div>
+					</div>
+				</header>
+
+				<div class="o-grid">
+					<div class="c-box">
+						<div class="c-box__frame">
+							<div class="c-box__photo">							
+								<img src="img/rent2-01.jpg" alt="" width="406" height="300">
+							</div>						
+						</div>
+						
+						<div class="c-box__header c-box__header--bottom">
+							<p class="c-box__title c-box__title--big">Rent a Car</p>
+							<a href="details.html" class="o-btn o-btn--border">Ask for details</a>
+						</div>
+					</div>
+					
+					<div class="c-box">
+						<div class="c-box__frame">
+							<div class="c-box__photo">							
+								<img src="img/rent2-02.jpg" alt="" width="406" height="300">
+							</div>						
+						</div>
+						
+						<div class="c-box__header c-box__header--bottom">
+							<p class="c-box__title c-box__title--big">Rent a Car</p>
+							<a href="details.html" class="o-btn o-btn--border">Ask for details</a>
+						</div>
+					</div>
+					
+					<div class="c-box">
+						<div class="c-box__frame">
+							<div class="c-box__photo">							
+								<img src="img/rent2-03.jpg" alt="" width="406" height="300">
+							</div>						
+						</div>
+						
+						<div class="c-box__header c-box__header--bottom">
+							<p class="c-box__title c-box__title--big">Rent a Car</p>
+							<a href="details.html" class="o-btn o-btn--border">Ask for details</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- /section -->
+		</div>
+
+		
+		
+		<div class="o-wrap o-wrap--base">
+			<footer class="c-footer">
+			
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Quick links</h4>
+					
+					<nav class="c-nav c-nav--footer">
+					
+					
+						<ul>
+							<li class="is-active">
+								<a href="index.html">Home</a>
+							</li>
+							
+							<li class="@@about">
+								<a href="about.html">About us</a>
+							</li>
+							
+							<li class="@@buy">
+								<a href="buy.html">Buy</a>
+							</li>
+							
+							<li class="@@rent">
+								<a href="rent.html">Rent</a>
+							</li>
+							
+							<li class="@@services">
+								<a href="services.html">Services</a>
+							</li>
+							
+							<li class="@@collaboration">
+								<a href="collaboration.html">Collaboration</a>
+							</li>
+							
+							<li class="@@partners">
+								<a href="partners.html">Partners</a>
+							</li>
+							
+							<li class="@@contact">
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+
+
+					</nav>
+				</div>
+
+
+				<div class="c-footer__col">
+					
+					<h4 class="c-footer__title">Contact us</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul>
+							<li>
+								<a href="#">info@domazurfrance.com</a>
+							</li>
+							
+							<li>
+								mobile: <a href="tel:0033640615143" class="text-orange">0033 640615143</a>
+							</li>
+							
+							<li>
+								mobile: <a href="tel:0033630811003" class="text-orange">0033 630811003</a>
+							</li>
+						</ul>	
+					</nav>
+
+
+				</div>
+				
+				
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Language</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul class="c-flags">
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ch"></i> <span>中文</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ru"></i> <span>Русский</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--pl"></i> <span>Polski</span>
+								</a>
+							</li>
+							
+							<li class="is-active">
+								<a href="#">
+									<i class="c-flags__item c-flags__item--en"></i> <span>English</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--de"></i> <span>Deutsch</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--fr"></i> <span>Français</span>
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="c-footer__col">
+					
+					<h4 class="c-footer__title">Follow us</h4>
+					
+					<nav class="c-nav c-nav--footer c-nav--social">
+						<ul>
+							<li>
+								<a href="#" class="icon-google"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-facebook"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-twitter"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-instagram"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-pinterest"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-youtube"></a>
+							</li>
+						</ul>	
+					</nav>
+
+				</div>
+
+			</footer>
+			
+			
+			<div class="c-bottomline">
+				<p class="c-bottomline__copyrights">&copy; 2017 All Rights Reserved <a href="//domazur.pl">Domazur</a></p>
+				<p>Realizacja: <a href="//loging.pl" target="_blank">Loging.pl</a></p>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<script src="js/libs.js"></script>
+	<script src="js/script.js"></script>
+	
+	<script>
+		loadCSS('/css/libs.css', false, 'screen');
+		
+		if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-609018-20','auto');ga('send','pageview');
+		}
+	</script>
+
+
+
+</body>
+</html>

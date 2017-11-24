@@ -1,0 +1,5 @@
+.o-grid {
+	@extend %flex;
+	@extend %flex-spacebetween;
+	@extend %flex-wrap;
+}

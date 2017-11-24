@@ -1,0 +1,44 @@
+body {
+	@include antialias;
+	line-height: 1.5;
+	text-rendering: optimizeSpeed;
+	font: {
+		family: $text;
+		size: #{$base-font-size}px;
+		weight: normal;
+	}
+	color: white;
+}
+
+a {
+	@extend %anim--fast;
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        //color: inherit;
+        outline: none;
+    }
+    
+    &:after, &:before {
+		@extend %anim--fast;
+    }
+    
+    i {
+		@extend %anim--fast;
+    }
+}
+
+sup {
+	vertical-align: text-top;
+	font-size: rem(10);
+}
+
+
+::selection {
+	background-color: $c-orange-1;
+	color: white;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+@@include('./includes/head.html')
+<body class="no-overflow">
+
+	<div class="o-container">
+
+		<div class="c-top">
+			<div class="o-wrap o-wrap--base">
+				<a href="index.html" class="c-logo">
+					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
+				</a>
+				
+				@@include('./includes/toolbar.html')
+				
+				<nav class="c-nav c-nav--top">
+				@@include('./includes/nav.html', { "collaboration": "is-active" })
+				</nav>
+			</div>
+		</div>
+
+		
+		<div class="c-leadphoto c-leadphoto--subsite">
+		
+			
+		
+			<picture>
+				<source srcset="img/collaboration@2565.jpg" media="(min-width: 1441px)">
+				<source srcset="img/collaboration@1440.jpg" media="(min-width: 1025px)">
+				<source srcset="img/collaboration@1024.jpg" media="(min-width: 321px)">
+				
+				<img srcset="img/collaboration@320.jpg" alt="">
+			</picture>
+		</div>
+		
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+				<div class="c-breadcrumbs">
+					<a href="#">Home</a> <span>Collaboration</span>
+				</div>
+			
+				<header class="o-header">
+					<h1>collaboration</h1>
+				</header>
+		
+		
+				<div class="c-article u-cols">
+					<p>
+Maybe Your client who trusts Your judgement, has given You a task of finding the right property for him, and You're not sure which way to turn, in order to ensure that his search will be handled in competent and honest way.
+					</p>
+					
+					<p>
+Often it will be the "last minute request" - today, to ensure that clients needs are met, we need to be very reactive and flexible.
+					</p>
+					
+					<p>
+You have an important role to play, and can make the process efficient and pleasant for Your client, assuring the required results.
+					</p>
+					
+					<p>
+We understand Your importance in that process, and make sure that You're adequately compensated.
+Get in touch with us, so that we can discuss all the details without further delay.
+					</p>
+					
+					<p>
+We understand Your importance in that process, and make sure that You're adequately compensated. Get in touch with us, so that we can discuss all the details without further delay.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+
+		@@include('./includes/contactform.html')
+		@@include('./includes/rent2.html')
+		
+		
+		<div class="o-wrap o-wrap--base">
+			<footer class="c-footer">
+			
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Quick links</h4>
+					
+					<nav class="c-nav c-nav--footer">
+					@@include('./includes/nav.html', { "collaboration": "is-active" })
+					</nav>
+				</div>
+
+
+				<div class="c-footer__col">
+					@@include('./includes/contact-us.html')
+
+				</div>
+				
+				
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Language</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul class="c-flags">
+							@@include('./includes/flags.html')
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="c-footer__col">
+					@@include('./includes/follow-us.html')
+				</div>
+
+			</footer>
+			
+			
+			<div class="c-bottomline">
+				<p class="c-bottomline__copyrights">&copy; 2017 All Rights Reserved <a href="//domazur.pl">Domazur</a></p>
+				<p>Realizacja: <a href="//loging.pl" target="_blank">Loging.pl</a></p>
+			</div>
+		</div>
+		
+		
+		
+	</div>
+
+
+	@@include('./includes/scripts.html')
+
+</body>
+</html>

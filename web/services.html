@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<meta name="robots" content="noindex, nofollow">
+
+	<title>domazur</title>	
+
+	<script src="js/pace.min.js"></script>
+	<script>
+	
+		document.documentElement.style.display = 'none';
+	
+		var loadMyCSS = function() {
+			var style = document.createElement('style'),
+				url = "css/style.css",
+			    head = document.getElementsByTagName('head')[0],
+			    link = document.createElement('link');
+			
+			link.type = "text/css"; 
+			link.rel = "stylesheet";
+			link.href = url;
+	
+			head.appendChild(link);
+	
+			link.onload = function () {
+				document.documentElement.removeAttribute('style');
+/*
+				setTimeout(function() {
+					setHeights();
+				}, 10);
+*/
+			};
+		}
+	
+		Pace.on('start', function() {
+			loadMyCSS();
+		});
+		
+		Pace.on('done', function() {
+			classie.remove( document.getElementsByTagName('body')[0], 'no-overflow' );
+			
+			ctme.Flags.init();
+			ctme.Carousel.init();
+			ctme.Helper.nice();
+			ctme.Search.init();
+
+		});
+	
+	</script>
+</head>
+
+<body class="no-overflow">
+
+	<div class="o-container">
+
+		<div class="c-top">
+			<div class="o-wrap o-wrap--base">
+				<a href="index.html" class="c-logo">
+					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
+				</a>
+				
+								<div class="c-top__toolbar">
+					<ul class="c-toolbar">
+						<li class="c-toolbar__item">
+							<a href="mailto:info@domazurfrance.com">
+								<i class="icon-e-mail"></i> info@domazurfrance.com
+							</a>
+						</li>
+						
+						<li class="c-toolbar__item">
+							<i class="icon-phone"></i>
+							<a href="#" class="c-toolbar__phone">0033 640615143</a>
+							<a href="#" class="c-toolbar__phone">0033 630811003</a>
+						</li>
+					</ul>
+					
+					<div class="c-lang">
+						<ul class="c-flags c-flags--current" id="currentFlag">
+							<li class="c-flags__item">
+								<i class="c-flags__item c-flags__item--en"></i>
+							</li>
+						</ul>
+
+						<ul class="c-flags c-flags--cloud" id="flags">
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ch"></i> <span>中文</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ru"></i> <span>Русский</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--pl"></i> <span>Polski</span>
+								</a>
+							</li>
+							
+							<li class="is-active">
+								<a href="#">
+									<i class="c-flags__item c-flags__item--en"></i> <span>English</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--de"></i> <span>Deutsch</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--fr"></i> <span>Français</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				
+				<nav class="c-nav c-nav--top">
+				
+					
+						<ul>
+							<li class="@@home">
+								<a href="index.html">Home</a>
+							</li>
+							
+							<li class="@@about">
+								<a href="about.html">About us</a>
+							</li>
+							
+							<li class="@@buy">
+								<a href="buy.html">Buy</a>
+							</li>
+							
+							<li class="@@rent">
+								<a href="rent.html">Rent</a>
+							</li>
+							
+							<li class="is-active">
+								<a href="services.html">Services</a>
+							</li>
+							
+							<li class="@@collaboration">
+								<a href="collaboration.html">Collaboration</a>
+							</li>
+							
+							<li class="@@partners">
+								<a href="partners.html">Partners</a>
+							</li>
+							
+							<li class="@@contact">
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+
+
+				</nav>
+			</div>
+		</div>
+
+		
+		<div class="c-leadphoto c-leadphoto--subsite">
+		
+			
+		
+			<picture>
+				<source srcset="img/services@2565.jpg" media="(min-width: 1441px)">
+				<source srcset="img/services@1440.jpg" media="(min-width: 1025px)">
+				<source srcset="img/services@1024.jpg" media="(min-width: 321px)">
+				
+				<img srcset="img/services@320.jpg" alt="">
+			</picture>
+		</div>
+		
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+				<div class="c-breadcrumbs">
+					<a href="#">Home</a> <span>Services</span>
+				</div>
+			
+				<header class="o-header">
+					<h1>Services</h1>
+				</header>
+		
+		
+				<div class="c-article">
+					<header class="clear">
+						<h4 class="u-align-center">
+	At Domazur we understand that being in a foreign country our clients require assistance in all aspects related to their stay here - be it a short holiday or a permanent relocation. Below a few classic requests, which come up frequently, others, specific for You - let us know what needed and we’ll find a way to help.
+						</h4>
+					</header>
+					
+					<br><br><br><br>
+					
+					
+					<img src="img/services-photo-1.jpg" alt="" width="450" height="330" class="u-pull-right">
+					
+					
+					<h3>Purchase process</h3>
+					<p>
+					We accompany You every step of the way - explain the various locations and types of products which might be suitable for You; assist You with the search of the whole market; negotiate the best price possible; explain the legal process in Your language - we work with the team of notaries, lawyers, translators etc; assist with opening an account and a mortgage.
+					</p>
+					
+					<h3>Renovation</h3>
+					<p>
+					Once You have bought a dream property, often You want to modify it, decorate it or even build it from scratch if You have bought a land.
+					</p>
+					
+					<p>
+					We assist with the legal aspects of construction, like building permits; put You in touch with the builders and architects who know the local specifics, and have proven to be reliable and competitive on price, delivery times, quality etc. and are able to provide the references from the happy clients . Having a reliable, competent and reasonable pricewise builder (architect/designer), who’s capable to oversee the whole project, is a difficult to find in France and many of our clients have been very grateful that we have helped them in that matter. 
+					</p>
+					
+					<h3>Car renatal - purchase, boat charter - purchase</h3>
+					<p>
+					Whether it’s a short rental of a specific model, or a purchase of a new or second hand car; We negotiate competitive prices for You and assist with the legal aspect of the purchase - registration, insurance etc.
+					</p>				
+					
+					
+					
+					<img src="img/services-photo-1.jpg" alt="" width="450" height="330" class="u-pull-left">
+					
+					<h3>Personnel</h3>
+					<p>
+					Babysitters, cleaners, cooks, drivers, gardeners etc.
+					We understand how frustrating can be finding the adequate and honest personnel when abroad, We work with people who have proven trustworthy, nannies who speak the required language etc.
+					All of the above at prices which are adequate to the market.
+					</p>
+					
+					<h3>Transport</h3>
+					<p>
+					Whether You need a pick up at the airport, or need a minibus to be driven around the sites, or for any other needs, we can arrange it. 
+					</p>
+					
+					<h3>Event organizing</h3>
+					<p>
+					Whether You need to organize a birthday party for Your child, or a cocktail reception for the guests - we can help with catering, entertainment etc. 
+					</p>
+					
+					<h3>Conciering services</h3>
+					<p>
+					If You need an advise and help with booking restaurants, hotels, getting concert tickets or anything else, we know the area and the right people. 
+					</p>
+					
+					<h3>Permanent relocation</h3>
+					<p>
+					If You have made an important decision to move permanently to another country, that will require an even more complex and global approach - starting from relevant legal advise, information and help with school placements for Your children, removal from Your previous home or help with furniture purchases in the new one, etc.
+					</p>				
+					
+					
+					<br><br>
+					
+					<h4 class="u-align-center">We’re here to help You all along the way with all aspects involved.</h4>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section o-section--boxes">
+			
+				<header class="o-header">
+					<h2>Rent a Car, Yacht or Jet charter</h2>
+		
+					<div class="o-header__line">
+						<div class="o-header__lead o-header__lead--text">We will help You by hire transport</div>
+					</div>
+				</header>
+
+				<div class="o-grid">
+					<div class="c-box">
+						<div class="c-box__frame">
+							<div class="c-box__photo">							
+								<img src="img/rent2-01.jpg" alt="" width="406" height="300">
+							</div>						
+						</div>
+						
+						<div class="c-box__header c-box__header--bottom">
+							<p class="c-box__title c-box__title--big">Rent a Car</p>
+							<a href="details.html" class="o-btn o-btn--border">Ask for details</a>
+						</div>
+					</div>
+					
+					<div class="c-box">
+						<div class="c-box__frame">
+							<div class="c-box__photo">							
+								<img src="img/rent2-02.jpg" alt="" width="406" height="300">
+							</div>						
+						</div>
+						
+						<div class="c-box__header c-box__header--bottom">
+							<p class="c-box__title c-box__title--big">Rent a Car</p>
+							<a href="details.html" class="o-btn o-btn--border">Ask for details</a>
+						</div>
+					</div>
+					
+					<div class="c-box">
+						<div class="c-box__frame">
+							<div class="c-box__photo">							
+								<img src="img/rent2-03.jpg" alt="" width="406" height="300">
+							</div>						
+						</div>
+						
+						<div class="c-box__header c-box__header--bottom">
+							<p class="c-box__title c-box__title--big">Rent a Car</p>
+							<a href="details.html" class="o-btn o-btn--border">Ask for details</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- /section -->
+		</div>
+
+		
+		
+		<div class="o-wrap o-wrap--base">
+			<footer class="c-footer">
+			
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Quick links</h4>
+					
+					<nav class="c-nav c-nav--footer">
+					
+					
+						<ul>
+							<li class="@@home">
+								<a href="index.html">Home</a>
+							</li>
+							
+							<li class="@@about">
+								<a href="about.html">About us</a>
+							</li>
+							
+							<li class="@@buy">
+								<a href="buy.html">Buy</a>
+							</li>
+							
+							<li class="@@rent">
+								<a href="rent.html">Rent</a>
+							</li>
+							
+							<li class="is-active">
+								<a href="services.html">Services</a>
+							</li>
+							
+							<li class="@@collaboration">
+								<a href="collaboration.html">Collaboration</a>
+							</li>
+							
+							<li class="@@partners">
+								<a href="partners.html">Partners</a>
+							</li>
+							
+							<li class="@@contact">
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+
+
+					</nav>
+				</div>
+
+
+				<div class="c-footer__col">
+					
+					<h4 class="c-footer__title">Contact us</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul>
+							<li>
+								<a href="#">info@domazurfrance.com</a>
+							</li>
+							
+							<li>
+								mobile: <a href="tel:0033640615143" class="text-orange">0033 640615143</a>
+							</li>
+							
+							<li>
+								mobile: <a href="tel:0033630811003" class="text-orange">0033 630811003</a>
+							</li>
+						</ul>	
+					</nav>
+
+
+				</div>
+				
+				
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Language</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul class="c-flags">
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ch"></i> <span>中文</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ru"></i> <span>Русский</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--pl"></i> <span>Polski</span>
+								</a>
+							</li>
+							
+							<li class="is-active">
+								<a href="#">
+									<i class="c-flags__item c-flags__item--en"></i> <span>English</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--de"></i> <span>Deutsch</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--fr"></i> <span>Français</span>
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="c-footer__col">
+					
+					<h4 class="c-footer__title">Follow us</h4>
+					
+					<nav class="c-nav c-nav--footer c-nav--social">
+						<ul>
+							<li>
+								<a href="#" class="icon-google"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-facebook"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-twitter"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-instagram"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-pinterest"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-youtube"></a>
+							</li>
+						</ul>	
+					</nav>
+
+				</div>
+
+			</footer>
+			
+			
+			<div class="c-bottomline">
+				<p class="c-bottomline__copyrights">&copy; 2017 All Rights Reserved <a href="//domazur.pl">Domazur</a></p>
+				<p>Realizacja: <a href="//loging.pl" target="_blank">Loging.pl</a></p>
+			</div>
+		</div>
+
+	</div>
+
+
+	
+	<script src="js/libs.js"></script>
+	<script src="js/script.js"></script>
+	
+	<script>
+		loadCSS('/css/libs.css', false, 'screen');
+		
+		if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-609018-20','auto');ga('send','pageview');
+		}
+	</script>
+
+
+
+</body>
+</html>

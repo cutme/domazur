@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+@@include('./includes/head.html')
+<body class="no-overflow">
+
+	<div class="o-container">
+
+		<div class="c-top">
+			<div class="o-wrap o-wrap--base">
+				<a href="index.html" class="c-logo">
+					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
+				</a>
+				
+				@@include('./includes/toolbar.html')
+				
+				<nav class="c-nav c-nav--top">
+				@@include('./includes/nav.html', { "partners": "is-active" })
+				</nav>
+			</div>
+		</div>
+
+		
+		<div class="c-leadphoto c-leadphoto--subsite">
+		
+			
+		
+			<picture>
+				<source srcset="img/owners@2565.jpg" media="(min-width: 1441px)">
+				<source srcset="img/owners@1440.jpg" media="(min-width: 1025px)">
+				<source srcset="img/owners@1024.jpg" media="(min-width: 321px)">
+				
+				<img srcset="img/owners@320.jpg" alt="">
+			</picture>
+		</div>
+		
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+				<div class="c-breadcrumbs">
+					<a href="#">Home</a> <span>Partners</span>
+				</div>
+			
+				<header class="o-header">
+					<h1>Partners</h1>
+				</header>
+		
+		
+				<div class="c-article">
+					<p>
+It’s not obvious to find a good, reliable builder who keeps to deadlines and budget. Or organize a discreet and professional security for Your VIP reception, hire a reliable bodyguard who’s familiar with the local area. Or find a reliable caterer for Your wedding etc. On this site You’ll find just some of the Partners, who have been tried and tested by our clients. For a detailed analysis of Your needs, call us and we’ll find the most suitable solution for You.
+					</p>
+				</div>
+				
+				<div class="c-article u-cols">
+					<h4>Renovation</h4>
+					<h5>Oppidum Rénovation: https://www.oppidum-renovation.com</h5>
+					
+					<h4>PRIVATE BEACH</h4>
+					<h5>Lido Plage: https://www.lidoplagenice.com</h5>
+					
+					<h4>SECURITY</h4>
+					<h5>Océan Sécurité: https://www.ocean-securite.com</h5>
+					
+					<h4>BOUTIQUES</h4>
+					<h5>Flamme et fumée: https://www.flamme-et-fumee.com</h5>
+					
+					
+					<h4>PROPERTIES ALL OVER THE WORLD</h4>
+					<h5>Domaza: https://www.domaza.co.uk</h5>
+					
+					<h4>OVERSEAS PROPERTY</h4>
+					<h5>Tranio: https://tranio.com</h5>
+					
+					<h4>CHAUFFEUR SERVICE</h4>
+					<h5>Paris Platinum Service: https://www.chauffeursparis.com</h5>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		@@include('./includes/rent2.html')
+		
+		
+		<div class="o-wrap o-wrap--base">
+			<footer class="c-footer">
+			
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Quick links</h4>
+					
+					<nav class="c-nav c-nav--footer">
+					@@include('./includes/nav.html', { "partners": "is-active" })
+					</nav>
+				</div>
+
+
+				<div class="c-footer__col">
+					@@include('./includes/contact-us.html')
+
+				</div>
+				
+				
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Language</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul class="c-flags">
+							@@include('./includes/flags.html')
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="c-footer__col">
+					@@include('./includes/follow-us.html')
+				</div>
+
+			</footer>
+			
+			
+			<div class="c-bottomline">
+				<p class="c-bottomline__copyrights">&copy; 2017 All Rights Reserved <a href="//domazur.pl">Domazur</a></p>
+				<p>Realizacja: <a href="//loging.pl" target="_blank">Loging.pl</a></p>
+			</div>
+		</div>
+		
+		
+		
+	</div>
+
+
+	@@include('./includes/scripts.html')
+
+</body>
+</html>

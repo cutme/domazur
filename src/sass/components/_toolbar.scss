@@ -1,0 +1,38 @@
+.c-toolbar {
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+	color: $c-gray-2;
+	
+	&__item {
+		float: left;
+		margin-right: 30px;
+		
+		i {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 15px;
+			font-size: rem(22);
+			color: $c-orange-1;
+		}
+	}
+	
+	&__phone {
+		&:first-of-type {
+			&:after {
+				margin-left: 2px;
+				content: '/';
+			}
+		}
+	}
+	
+	a {
+		&:hover {
+			color: white;
+			
+			&:after {
+				color: $c-gray-1;
+			}
+		}
+	}
+}

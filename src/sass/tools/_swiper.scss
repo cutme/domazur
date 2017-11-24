@@ -1,0 +1,25 @@
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	position: relative !important;
+	bottom: auto !important;
+	left: auto !important;
+}
+
+.swiper-container-horizontal {
+	& > .swiper-pagination-bullets {
+
+		.swiper-pagination-bullet {
+			width: 18px; height: 18px;
+			background-color: $c-black;
+			border: 1px solid rgba($c-gray-1, .5);
+			margin: 0 10px !important;
+			opacity: 1;
+			
+			&.swiper-pagination-bullet-active {
+				@extend %gradient;
+				border: none;
+				//width: 20px; height: 20px;
+			}
+		}
+		
+	}
+}

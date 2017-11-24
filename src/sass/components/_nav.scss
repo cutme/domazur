@@ -1,0 +1,60 @@
+.c-nav {
+	
+	&--footer {
+		li {
+			margin-bottom: 10px;
+			
+			a {
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
+	
+	&--social {
+		li {
+			display: inline-block;
+			margin-right: 20px;
+			font-size: rem(18);
+		}
+	}
+	
+	&--top {
+		@extend %abs;
+		left: 0;
+		top: 125px;
+		width: 100%;
+		border-top: 1px solid $c-gray-3;
+		
+		@media screen and ( max-width: $laptop + px ) {
+			left: 40px;
+			width: calc(100% - 80px);
+		}
+		
+		li {
+			float: left;
+			margin-right: 45px; 
+	
+			a {
+				display: block;
+				padding: 26px 0;
+				text-transform: uppercase;
+				font-size: rem(18);
+				line-height: 1;
+				color: white;
+				
+				&:hover {
+					opacity: .5;
+				}
+			}			
+		}
+	}
+	
+	.is-active {
+		a {
+			opacity: 1 !important;
+			color: $c-orange-1 !important;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+[class^="icon-"], [class*=" icon-"] {
+	@extend %icomoon;
+}
+
+.anim {
+	@extend %anim--medium;
+	will-change: transform, opacity;
+	
+	&--up {
+		opacity: 0;
+		transform: translateY(50px);
+		
+		&.anim--loaded {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	
+	&--left {
+		opacity: 0;
+		transform: translateX(-50px);
+		
+		&.anim--loaded {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+	
+	&--fadein {
+		opacity: 0;
+		
+		&.anim--loaded {
+			opacity: 1;
+		}
+	}
+}
+
+.no-overflow {
+	overflow: hidden;
+}
+
+.u-cols {
+	column-count: 2;
+	column-gap: 40px;
+}
+
+.u-align-center {
+	text-align: center;
+}
+
+.u-pull-left {
+	float: left;
+	margin: {
+		right: 120px;
+		left: 120px;
+	}
+}
+
+.u-pull-right {
+	float: right;
+	margin: {
+		right: 120px;
+		left: 120px;
+	}
+}

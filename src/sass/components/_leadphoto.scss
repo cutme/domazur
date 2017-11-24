@@ -1,0 +1,37 @@
+.c-leadphoto {
+	@extend %rel;
+
+	picture {
+		@extend %rel;
+		
+		img {
+			margin: 0 auto;
+			
+			@media screen and ( min-width: $desktop + 1px ) {
+				width: 100%;
+			}
+			
+		}
+	}
+	
+	&--home {
+		margin-bottom: 70px;
+	}
+	
+	&--subsite {
+		margin-bottom: 40px;
+	}
+	/*
+background: {
+		repeat: no-repeat;
+		position: center;
+		size: cover;
+	}
+	
+	@media screen and ( min-width: $laptop + 1px ) {
+		//min-height: 
+	}
+*/
+	
+	
+}

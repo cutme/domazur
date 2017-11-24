@@ -1,0 +1,14 @@
+.c-footer {
+	@extend %flex;
+	@extend %flex-spacebetween;
+	border-top: 1px solid $c-gray-3;
+	border-bottom: 1px solid $c-gray-3;
+	padding: 90px 45px 40px 45px;
+	color: $c-gray-1;
+
+	&__title {
+		margin-bottom: 40px;
+		font-size: rem(20);
+		color: $c-orange-1;
+	}	
+}

@@ -1,0 +1,14 @@
+.c-bottomline {
+	@extend %flex;
+	@extend %flex-spacebetween;
+	font-size: rem(14);
+	color: $c-gray-1;
+	
+	a {
+		color: $c-orange-1;
+		
+		&:hover {
+			color: white;
+		}
+	}
+}

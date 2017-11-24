@@ -1,0 +1,13 @@
+.c-top {
+	height: 200px;
+	
+	&__toolbar {
+		@extend %abs; z-index: 10;
+		right: 0; top: 45px;
+		
+		@media screen and ( max-width: $laptop + px ) {
+			right: 40px;
+		}
+	}
+}
+

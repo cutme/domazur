@@ -1,0 +1,29 @@
+.o-wrap {
+	@extend %rel;
+	margin: 0 auto;
+	
+	&--base {
+		max-width: $base + px;
+		
+		@media screen and ( max-width: $laptop + px ) {
+			padding: {
+				//left: 40px;
+				//right: 40px;
+			}
+		}
+		
+		
+		@media screen and ( max-width: $laptop + px ) {
+			padding: {
+				left: 40px;
+				right: 40px;
+			}
+		}
+
+	}
+	
+	&--content {
+		width: 1350px;
+	}
+	
+}

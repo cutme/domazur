@@ -1,0 +1,55 @@
+.c-article {
+	line-height: 1.6;
+	font-size: rem(15);
+	color: $c-gray-5;
+	
+	a {
+		&:hover {
+			color: white;
+		}
+	}
+	
+	header {
+		padding: 0 160px;
+	}
+
+	img {
+		border: 1px solid $c-gray-3;
+		margin-top: 120px;
+		margin-bottom: 140px;
+		padding: 10px;
+	}
+	
+	h3, h4 {
+		font-size: rem(18);
+		color: white;
+	}
+	
+	h3 {
+		text-transform: uppercase;
+	}
+	
+	h4 {
+		
+	}
+	
+	h5 {
+		margin-bottom: 1.5rem;
+		font-size: rem(16);
+	}
+	
+	p {
+		margin-bottom: 2rem;
+	}
+	
+	ul {
+		margin-bottom: 2rem;
+		padding-left: 20px;
+	
+		li {
+			&:before {
+				content: '- ';
+			}
+		}
+	}
+}

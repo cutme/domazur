@@ -1,0 +1,29 @@
+.c-breadcrumbs {
+	margin-bottom: 90px;
+
+	a {
+		color: $c-gray-1;
+
+		&:after {
+			padding-left: 2px;
+			padding-right: 4px;
+			content: ' | ';
+		}
+		
+		&:hover {
+			color: white;
+		}
+		
+		&.no-line {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	
+	span {
+		color: $c-orange-1;
+		
+		
+	}
+}

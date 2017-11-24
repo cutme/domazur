@@ -1,0 +1,15 @@
+.o-meta {
+	@extend %font-serif;
+	
+	span {
+		color: $c-gray-1;
+
+		& + span {
+			color: $c-orange-1;
+		}
+	}
+	
+	&--small {
+		font-size: rem(13);
+	}
+}

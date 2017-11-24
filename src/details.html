@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-US">
+@@include('./includes/head.html')
+<style>
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .gallery-thumbs .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+  </style>
+<body class="no-overflow">
+
+	<div class="o-container">
+
+		<div class="c-top">
+			<div class="o-wrap o-wrap--base">
+				<a href="index.html" class="c-logo">
+					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
+				</a>
+				
+				@@include('./includes/toolbar.html')
+				
+				<nav class="c-nav c-nav--top">
+				@@include('./includes/nav.html', { "home": "is-active" })
+				</nav>
+			</div>
+		</div>
+
+		
+		<div class="c-leadphoto c-leadphoto--home">
+		
+			
+		
+			<picture>
+				<source srcset="img/details@2565.jpg" media="(min-width: 1441px)">
+				<source srcset="img/home@1440.jpg" media="(min-width: 1025px)">
+				<source srcset="img/home@1024.jpg" media="(min-width: 321px)">
+				
+				<img srcset="img/home@320.jpg" alt="">
+			</picture>
+		</div>
+
+
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+				<div class="c-breadcrumbs">
+					<a href="index.html">Home</a> <a href="buy.html">Buy</a> <a href="buy.html" class="no-line">France</a> <span> - Mont Boron</span>
+				</div>
+		
+				<div class="c-details">
+					<div class="c-details__col">
+						<div class="c-gallery" id="thumbsGallery">
+						
+							<div class="swiper-container gallery-top">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="img/gallery-01.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-02.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-03.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-04.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-05.jpg" alt="" width="675" height="506">
+									</div>
+								</div>
+							</div>
+						
+							<div class="swiper-container gallery-thumbs">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="img/gallery-01.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-02.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-03.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-04.jpg" alt="" width="675" height="506">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/gallery-05.jpg" alt="" width="675" height="506">
+									</div>
+								</div>
+							</div>
+							
+							<div class="swiper-arrows">
+								<div class="swiper-button swiper-button--prev icon-arrow--left"></div>
+								<div class="swiper-button swiper-button--next icon-arrow--right"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="c-details__col">
+					
+						<div class="c-description">
+							<div class="c-description__row c-description__row--title">
+								<h2 class="c-featured__lead">Nice Mont Boron</h2>
+								<p class="o-meta">
+									<span>Reference:</span> <span>DA 1264</span>
+								</p>
+							</div>
+							
+							<div class="c-description__row c-description__row--cta">
+								<p class="c-description__price">Price: <span class="c-description__amount">1.450,000 &euro;</span></p>
+							</div>
+							
+							<div class="c-description__row c-description__row--description">
+								<div class="c-article">
+									<h4>Description</h4>
+
+									<p>
+Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of land of 2 800 sqm. Beautiful view overlooking the Bay of Cap Ferrat and Bay of Angels in Nice.  Several parking spaces.
+									</p>
+									
+									
+									<h4>Details</h4>
+
+									<ul>
+										<li>
+											<span class="text-orange">Consisting of Main level:</span> Living room with fire place, Dining room, Master Be droom with bathroom, Full equipped kitchen, Guest toilet, Study room
+										</li>
+										
+										<li>
+											<span class="text-orange">Following levels:</span> 4 bedrooms, 2 bathro oms, 1 shower room
+										</li>
+
+										<li>
+											<span class="text-orange">Additionally:</span> Pool, Pool house, Fireplace, Double glazing, Laundry room, Auto  matic gate, Quiet area, Air conditioning.
+										</li>
+									</ul>
+									
+									<span class="text-orange">RENT:</span> on request
+								</div>
+							</div>
+							
+							<div class="c-description__row c-description__row--details">
+								<div>
+									<img src="img/icons/yardage.png" alt="yardage" width="28" height="30">
+									<span>300.00 m<sup>2</sup></span>
+								</div>
+								
+								<div>
+									<img src="img/icons/yardage.png" alt="yardage" width="30" height="30">
+									<span>2800.00 m<sup>2</sup></span>
+								</div>
+								
+								<div>
+									<img src="img/icons/bedroom.png" alt="bedroom" width="30" height="30">
+									<span>5</span>
+								</div>
+								
+								<div>
+									<img src="img/icons/bathroom.png" alt="bathroom" width="22" height="30">
+									<span>4</span>
+								</div>
+								
+								<div>
+									<img src="img/icons/pool.png" alt="bathroom" width="30" height="30">
+									<span>Pool</span>
+								</div>
+								
+								<div>
+									<img src="img/icons/sea.png" alt="sea view" width="30" height="30">
+									<span>Sea view</span>
+								</div>
+	
+								<div>
+									<img src="img/icons/360.png" alt="360" width="30" height="30">
+									<span>Virtual tour 360<sup>o</sup></span>
+								</div>
+								
+								<div>
+									<img src="img/icons/pool.png" alt="Parking space" width="30" height="30">
+									<span>Parking space</span>
+								</div>
+							</div>
+							
+							<div class="c-description__row c-description__row--print">
+								<a href="#" class="o-btn o-btn--border">Print this offer</a>
+							</div>
+						</div><!-- /description -->
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		@@include('./includes/contactform.html')
+
+
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+			
+				<header class="o-header">
+					<h2>Buy - our recommended</h2>
+		
+					<div class="o-header__line">
+						<div class="o-header__lead">
+							<img src="img/icons/buy.png" alt="" width="52" height="33">
+						</div>
+					</div>
+				</header>
+				
+				<div class="swiper-container" id="buy">
+					<div class="swiper-wrapper">
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-1.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-2.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-3.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-4.html')
+						</div>
+
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-1.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-2.html')
+						</div>
+				
+					</div><!-- /swiper-wrapper -->
+					
+					<div class="swiper-pagination"></div>
+				</div><!-- /swiper-container -->
+			</div><!-- /section -->
+		</div>
+
+				
+		@@include('./includes/featured-offers.html')
+		
+		
+		@@include('./includes/partnership.html')
+		
+		
+		@@include('./includes/rent2.html')
+		
+		
+		<div class="o-wrap o-wrap--base">
+			<footer class="c-footer">
+			
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Quick links</h4>
+					
+					<nav class="c-nav c-nav--footer">
+					@@include('./includes/nav.html', { "home": "is-active" })
+					</nav>
+				</div>
+
+
+				<div class="c-footer__col">
+					@@include('./includes/contact-us.html')
+
+				</div>
+				
+				
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Language</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul class="c-flags">
+							@@include('./includes/flags.html')
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="c-footer__col">
+					@@include('./includes/follow-us.html')
+				</div>
+
+			</footer>
+			
+			
+			<div class="c-bottomline">
+				<p class="c-bottomline__copyrights">&copy; 2017 All Rights Reserved <a href="//domazur.pl">Domazur</a></p>
+				<p>Realizacja: <a href="//loging.pl" target="_blank">Loging.pl</a></p>
+			</div>
+		</div>
+	</div>
+
+
+	@@include('./includes/scripts.html')
+
+</body>
+</html>

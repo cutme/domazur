@@ -1,0 +1,53 @@
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<meta name="robots" content="noindex, nofollow">
+
+	<title>domazur</title>	
+
+	<script src="js/pace.min.js"></script>
+	<script>
+	
+		document.documentElement.style.display = 'none';
+	
+		var loadMyCSS = function() {
+			var style = document.createElement('style'),
+				url = "css/style.css",
+			    head = document.getElementsByTagName('head')[0],
+			    link = document.createElement('link');
+			
+			link.type = "text/css"; 
+			link.rel = "stylesheet";
+			link.href = url;
+	
+			head.appendChild(link);
+	
+			link.onload = function () {
+				document.documentElement.removeAttribute('style');
+/*
+				setTimeout(function() {
+					setHeights();
+				}, 10);
+*/
+			};
+		}
+	
+		Pace.on('start', function() {
+			loadMyCSS();
+		});
+		
+		Pace.on('done', function() {
+			classie.remove( document.getElementsByTagName('body')[0], 'no-overflow' );
+			
+			ctme.Flags.init();
+			ctme.Carousel.init();
+			ctme.Helper.nice();
+			ctme.Search.init();
+
+		});
+	
+	</script>
+</head>

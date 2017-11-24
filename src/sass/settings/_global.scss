@@ -1,0 +1,41 @@
+// Fonts
+
+$icons:			'icomoon';
+//$serif:		'Playfair Display', serif;
+//$sans:		'sf-ui-display', sans-srif;
+$sans:			'Lato', sans-serif;
+$serif:			'Roboto Slab', serif;
+
+$text:		$sans;
+
+
+// Font weights
+
+$regular:			400;
+
+
+
+
+$z-index: (
+	logo          : 100
+);
+
+
+// RWD
+$desktop:			2565;
+$laptop:			1440;
+$tablet:			1024;
+$tablet_portrait:		768;
+$smartphone:			640;
+$smartphone_portrait:	480;
+
+
+
+// Default
+
+$base-font-size:	16;
+$base:				$laptop;
+
+
+
+

@@ -1,0 +1,65 @@
+.c-details {
+	@extend %clear;
+
+	.c-description__amount {
+		font-size: rem(24);
+		color: $c-orange-1;
+	}
+
+	&__col {
+		float: left;
+		width: 50%;
+		
+		&--description {
+			width: 675px;
+		}
+	}
+	
+	.c-article {
+		ul {
+			padding-left: 0;
+		}
+	}
+	
+	.c-description {
+		padding-left: 80px;
+	}
+	
+	.gallery-thumbs {
+		.swiper-slide {
+			opacity: 1;
+			cursor: pointer;
+		}
+	
+		.swiper-slide-active {
+			background-color: $c-orange-1;
+
+			img {
+				opacity: .3;
+			}
+		}
+	}
+
+	.swiper-container {
+		margin-bottom: 10px;
+	}
+	
+	.swiper-button {
+		@extend %gradient;
+		width: 55px; height: 55px;
+		text-align: center;
+		line-height: 55px;
+		font-size: rem(26);
+		
+		&:active {
+			opacity: .9
+		}
+	}
+	
+	.swiper-arrows {
+		@extend %flex;
+		@extend %flex-spacebetween;
+	}
+}
+
+

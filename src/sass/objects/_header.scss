@@ -1,0 +1,46 @@
+.o-header {
+	margin-bottom: 100px;
+	text-align: center;
+	color: $c-orange-1;
+
+	h1 {
+		@extend %rel;
+		font-size: rem(36);
+		
+		&:after {
+			@extend %abs-after;
+			left: 50%;
+			bottom: -30px;
+			transform: translateX(-50%);
+			width: 70px; height: 1px;
+			background-color: $c-orange-1;
+		}
+	}
+
+	h2 {
+		margin-bottom: 1rem;
+		font-size: rem(30);
+	}
+	
+	&__line {
+		height: 30px;
+		display: inline-block;
+		border-bottom: 1px solid $c-orange-1;
+		padding: 0 110px;
+	}
+	
+	&__lead {
+		@extend %rel;
+		@extend %font-serif;
+		transform: translateY(28%);
+		padding: 0 15px;
+		background-color: $c-black;
+		color: white;
+		
+		&--text {
+			transform: translateY(66%);
+		}
+	}
+
+		
+}

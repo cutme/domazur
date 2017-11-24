@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<meta name="robots" content="noindex, nofollow">
+
+	<title>domazur</title>	
+
+	<script src="js/pace.min.js"></script>
+	<script>
+	
+		document.documentElement.style.display = 'none';
+	
+		var loadMyCSS = function() {
+			var style = document.createElement('style'),
+				url = "css/style.css",
+			    head = document.getElementsByTagName('head')[0],
+			    link = document.createElement('link');
+			
+			link.type = "text/css"; 
+			link.rel = "stylesheet";
+			link.href = url;
+	
+			head.appendChild(link);
+	
+			link.onload = function () {
+				document.documentElement.removeAttribute('style');
+/*
+				setTimeout(function() {
+					setHeights();
+				}, 10);
+*/
+			};
+		}
+	
+		Pace.on('start', function() {
+			loadMyCSS();
+		});
+		
+		Pace.on('done', function() {
+			classie.remove( document.getElementsByTagName('body')[0], 'no-overflow' );
+			
+			ctme.Flags.init();
+			ctme.Carousel.init();
+			ctme.Helper.nice();
+			ctme.Search.init();
+
+		});
+	
+	</script>
+</head>
+
+<body class="no-overflow">
+
+	<div class="o-container">
+
+		<div class="c-top">
+			<div class="o-wrap o-wrap--base">
+				<a href="index.html" class="c-logo">
+					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
+				</a>
+				
+								<div class="c-top__toolbar">
+					<ul class="c-toolbar">
+						<li class="c-toolbar__item">
+							<a href="mailto:info@domazurfrance.com">
+								<i class="icon-e-mail"></i> info@domazurfrance.com
+							</a>
+						</li>
+						
+						<li class="c-toolbar__item">
+							<i class="icon-phone"></i>
+							<a href="#" class="c-toolbar__phone">0033 640615143</a>
+							<a href="#" class="c-toolbar__phone">0033 630811003</a>
+						</li>
+					</ul>
+					
+					<div class="c-lang">
+						<ul class="c-flags c-flags--current" id="currentFlag">
+							<li class="c-flags__item">
+								<i class="c-flags__item c-flags__item--en"></i>
+							</li>
+						</ul>
+
+						<ul class="c-flags c-flags--cloud" id="flags">
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ch"></i> <span>中文</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ru"></i> <span>Русский</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--pl"></i> <span>Polski</span>
+								</a>
+							</li>
+							
+							<li class="is-active">
+								<a href="#">
+									<i class="c-flags__item c-flags__item--en"></i> <span>English</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--de"></i> <span>Deutsch</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--fr"></i> <span>Français</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				
+				<nav class="c-nav c-nav--top">
+				
+					
+						<ul>
+							<li class="@@home">
+								<a href="index.html">Home</a>
+							</li>
+							
+							<li class="@@about">
+								<a href="about.html">About us</a>
+							</li>
+							
+							<li class="@@buy">
+								<a href="buy.html">Buy</a>
+							</li>
+							
+							<li class="@@rent">
+								<a href="rent.html">Rent</a>
+							</li>
+							
+							<li class="@@services">
+								<a href="services.html">Services</a>
+							</li>
+							
+							<li class="is-active">
+								<a href="collaboration.html">Collaboration</a>
+							</li>
+							
+							<li class="@@partners">
+								<a href="partners.html">Partners</a>
+							</li>
+							
+							<li class="@@contact">
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+
+
+				</nav>
+			</div>
+		</div>
+
+		
+		<div class="c-leadphoto c-leadphoto--subsite">
+		
+			
+		
+			<picture>
+				<source srcset="img/collaboration@2565.jpg" media="(min-width: 1441px)">
+				<source srcset="img/collaboration@1440.jpg" media="(min-width: 1025px)">
+				<source srcset="img/collaboration@1024.jpg" media="(min-width: 321px)">
+				
+				<img srcset="img/collaboration@320.jpg" alt="">
+			</picture>
+		</div>
+		
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+				<div class="c-breadcrumbs">
+					<a href="#">Home</a> <span>Collaboration</span>
+				</div>
+			
+				<header class="o-header">
+					<h1>collaboration</h1>
+				</header>
+		
+		
+				<div class="c-article u-cols">
+					<p>
+Maybe Your client who trusts Your judgement, has given You a task of finding the right property for him, and You're not sure which way to turn, in order to ensure that his search will be handled in competent and honest way.
+					</p>
+					
+					<p>
+Often it will be the "last minute request" - today, to ensure that clients needs are met, we need to be very reactive and flexible.
+					</p>
+					
+					<p>
+You have an important role to play, and can make the process efficient and pleasant for Your client, assuring the required results.
+					</p>
+					
+					<p>
+We understand Your importance in that process, and make sure that You're adequately compensated.
+Get in touch with us, so that we can discuss all the details without further delay.
+					</p>
+					
+					<p>
+We understand Your importance in that process, and make sure that You're adequately compensated. Get in touch with us, so that we can discuss all the details without further delay.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="c-contactform">
+			<div class="c-contactform__content">
+			
+				<h3 class="c-contactform__title">Contact Form</h3>
+				<h4 class="c-contactform__subtitle">Required fields are followed by *</h4>
+				
+				<div class="c-form">
+					<div class="c-form__row">
+						<label>Name *</label>
+						<input type="text" class="c-form__field">
+					</div>
+					
+					<div class="c-form__row">
+						<label>Phone</label>
+						<input type="text" class="c-form__field">
+					</div>
+					
+					<div class="c-form__row">
+						<label>E-mail *</label>
+						<input type="email" class="c-form__field">
+					</div>
+					
+					<div class="c-form__row">
+						<label>Subject *</label>
+						<input type="text" class="c-form__field">
+					</div>
+					
+					<div class="c-form__row">
+						<label>Message *</label>
+						<textarea class="c-form__field c-form__field--textarea" placeholder="Message"></textarea>
+					</div>
+					
+					<div class="c-form__row c-form__row--submit">
+						<button type="submit" class="o-btn o-btn--border o-btn--medium">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section o-section--boxes">
+			
+				<header class="o-header">
+					<h2>Rent a Car, Yacht or Jet charter</h2>
+		
+					<div class="o-header__line">
+						<div class="o-header__lead o-header__lead--text">We will help You by hire transport</div>
+					</div>
+				</header>
+
+				<div class="o-grid">
+					<div class="c-box">
+						<div class="c-box__frame">
+							<div class="c-box__photo">							
+								<img src="img/rent2-01.jpg" alt="" width="406" height="300">
+							</div>						
+						</div>
+						
+						<div class="c-box__header c-box__header--bottom">
+							<p class="c-box__title c-box__title--big">Rent a Car</p>
+							<a href="details.html" class="o-btn o-btn--border">Ask for details</a>
+						</div>
+					</div>
+					
+					<div class="c-box">
+						<div class="c-box__frame">
+							<div class="c-box__photo">							
+								<img src="img/rent2-02.jpg" alt="" width="406" height="300">
+							</div>						
+						</div>
+						
+						<div class="c-box__header c-box__header--bottom">
+							<p class="c-box__title c-box__title--big">Rent a Car</p>
+							<a href="details.html" class="o-btn o-btn--border">Ask for details</a>
+						</div>
+					</div>
+					
+					<div class="c-box">
+						<div class="c-box__frame">
+							<div class="c-box__photo">							
+								<img src="img/rent2-03.jpg" alt="" width="406" height="300">
+							</div>						
+						</div>
+						
+						<div class="c-box__header c-box__header--bottom">
+							<p class="c-box__title c-box__title--big">Rent a Car</p>
+							<a href="details.html" class="o-btn o-btn--border">Ask for details</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- /section -->
+		</div>
+
+		
+		
+		<div class="o-wrap o-wrap--base">
+			<footer class="c-footer">
+			
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Quick links</h4>
+					
+					<nav class="c-nav c-nav--footer">
+					
+					
+						<ul>
+							<li class="@@home">
+								<a href="index.html">Home</a>
+							</li>
+							
+							<li class="@@about">
+								<a href="about.html">About us</a>
+							</li>
+							
+							<li class="@@buy">
+								<a href="buy.html">Buy</a>
+							</li>
+							
+							<li class="@@rent">
+								<a href="rent.html">Rent</a>
+							</li>
+							
+							<li class="@@services">
+								<a href="services.html">Services</a>
+							</li>
+							
+							<li class="is-active">
+								<a href="collaboration.html">Collaboration</a>
+							</li>
+							
+							<li class="@@partners">
+								<a href="partners.html">Partners</a>
+							</li>
+							
+							<li class="@@contact">
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+
+
+					</nav>
+				</div>
+
+
+				<div class="c-footer__col">
+					
+					<h4 class="c-footer__title">Contact us</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul>
+							<li>
+								<a href="#">info@domazurfrance.com</a>
+							</li>
+							
+							<li>
+								mobile: <a href="tel:0033640615143" class="text-orange">0033 640615143</a>
+							</li>
+							
+							<li>
+								mobile: <a href="tel:0033630811003" class="text-orange">0033 630811003</a>
+							</li>
+						</ul>	
+					</nav>
+
+
+				</div>
+				
+				
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Language</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul class="c-flags">
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ch"></i> <span>中文</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--ru"></i> <span>Русский</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--pl"></i> <span>Polski</span>
+								</a>
+							</li>
+							
+							<li class="is-active">
+								<a href="#">
+									<i class="c-flags__item c-flags__item--en"></i> <span>English</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--de"></i> <span>Deutsch</span>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="c-flags__item c-flags__item--fr"></i> <span>Français</span>
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="c-footer__col">
+					
+					<h4 class="c-footer__title">Follow us</h4>
+					
+					<nav class="c-nav c-nav--footer c-nav--social">
+						<ul>
+							<li>
+								<a href="#" class="icon-google"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-facebook"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-twitter"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-instagram"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-pinterest"></a>
+							</li>
+							
+							<li>
+								<a href="#" class="icon-youtube"></a>
+							</li>
+						</ul>	
+					</nav>
+
+				</div>
+
+			</footer>
+			
+			
+			<div class="c-bottomline">
+				<p class="c-bottomline__copyrights">&copy; 2017 All Rights Reserved <a href="//domazur.pl">Domazur</a></p>
+				<p>Realizacja: <a href="//loging.pl" target="_blank">Loging.pl</a></p>
+			</div>
+		</div>
+		
+		
+		
+	</div>
+
+
+	
+	<script src="js/libs.js"></script>
+	<script src="js/script.js"></script>
+	
+	<script>
+		loadCSS('/css/libs.css', false, 'screen');
+		
+		if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-609018-20','auto');ga('send','pageview');
+		}
+	</script>
+
+
+
+</body>
+</html>

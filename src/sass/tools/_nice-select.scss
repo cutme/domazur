@@ -1,0 +1,107 @@
+.nice-select {
+	@extend %rel;
+	-webkit-tap-highlight-color: transparent;
+	width: 100%;
+	clear: both;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	line-height: 48px;
+	padding-left: 20px;
+	text-align: left;
+	transition: all 0.2s ease-in-out;
+	white-space: nowrap;	
+	border: 1px solid $c-gray-1;
+	color: $c-gray-1;
+	
+	&:after {
+		@extend %abs;
+		right: 15px; top: 0;
+		display: block;
+		font-family: 'icomoon';
+		content: "\e901";
+		font-size: rem(9);
+		transition: all 0.15s ease-in-out;
+		
+		.o-page__bg & {
+			color: white;
+		}
+	}
+
+	.list {
+		@extend %abs;
+		box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .13);
+		background-color: white;
+		margin-top: 4px;
+		opacity: 0;
+		overflow: hidden;
+		pointer-events: none;
+		top: 50px;
+		left: -1px;
+		width: calc(100% + 2px);
+		padding: 8px 0;
+		border: 1px solid $c-gray-1;
+		transform-origin: 50% 0;
+		transform: scale(0.75) translateY(-21px);
+		transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+		
+		&:hover .option:not(:hover) {
+			background-color: transparent !important;
+		}
+	}
+	
+	&:hover { }
+	
+	&:active, &.open, &:focus {
+		z-index: 20;
+	}
+
+	&.open:after {
+		transform: scaleY(-1); //rotate(180deg);
+	}
+	
+	&.open .list {
+		opacity: 1;
+		pointer-events: auto;
+		transform: scale(1) translateY(0);
+	}
+	
+	.option {
+		padding: 6px 12px;
+		line-height: normal;
+		cursor: pointer;
+		outline: none;
+		transition: all 0.2s;	
+		
+		&:hover, 
+		&.focus, 
+		&.selected.focus {
+			//@extend %radius;
+			background-color: black;
+			color: white;
+		}
+		
+		&.selected {
+			display: none;
+		}
+		
+		&.disabled {
+			background-color: transparent;
+			color: #999;
+			cursor: default;
+		}
+	}
+}
+  
+
+.no-csspointerevents .nice-select .list {
+	display: none;
+}
+
+.no-csspointerevents .nice-select.open .list {
+	display: block;
+}
+
+

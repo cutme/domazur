@@ -1,0 +1,105 @@
+.c-flags {
+	@extend %rel;
+
+	span {
+		padding-left: 10px;
+	}
+
+	&--cloud {
+		@extend %flex;
+		@extend %anim;
+		position: absolute !important;
+		left: 20px;
+		top: 35px;
+		flex-wrap: wrap;
+		width: 205px;
+		background-color: $c-black;
+		border: 1px solid $c-gray-3;
+		border-radius: 1px;
+		padding: 10px 20px 5px 20px;
+		opacity: 0;
+		transform: translateY(10px);
+		visibility: hidden;
+		
+		&.is-visible {
+			visibility: visible;	
+			transform: translateY(0);
+			opacity: 1;
+		}
+		
+		&:after {
+			@extend %abs-after;
+			left: 6px; top: -5px;
+			width: 10px; height: 10px;
+			background-color: $c-black;
+			border-left: 1px solid $c-gray-3;
+			border-top: 1px solid $c-gray-3;
+			transform: rotate(45deg);
+		}
+		
+		@media screen and ( max-width: 1810px ) {
+			left: auto;
+			right: 0;
+			
+			&:after {
+				left: auto;
+				right: 8px;
+			}
+		}
+		
+		span {
+			padding-left: 5px;
+			font-size: rem(14);
+			color: $c-gray-1;
+		}
+		
+		li {
+			width: 50%;
+			margin-bottom: 5px;
+		}
+	}
+	
+	&__item {
+		display: inline-block;
+		width: 16px;
+		height: 12px;
+		
+		&--ch {
+			background-image: url(../img/flag-ch.png);
+		}
+		
+		&--de {
+			background-image: url(../img/flag-de.png);
+		}
+		
+		&--fr {
+			background-image: url(../img/flag-fr.png);
+		}
+		
+		&--en {
+			background-image: url(../img/flag-en.png);
+		}
+		
+		&--pl {
+			background-image: url(../img/flag-pl.png);
+		}
+		
+		&--ru {
+			background-image: url(../img/flag-ru.png);
+		}
+	}	
+	
+	a {
+		&:hover {
+			span {
+				color: white;
+			}
+		}
+	}
+	
+	.is-active {
+		span {
+			color: $c-orange-1;
+		}
+	}
+}

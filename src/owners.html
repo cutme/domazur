@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+@@include('./includes/head.html')
+<body class="no-overflow">
+
+	<div class="o-container">
+
+		<div class="c-top">
+			<div class="o-wrap o-wrap--base">
+				<a href="index.html" class="c-logo">
+					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
+				</a>
+				
+				@@include('./includes/toolbar.html')
+				
+				<nav class="c-nav c-nav--top">
+				@@include('./includes/nav.html', { "owners": "is-active" })
+				</nav>
+			</div>
+		</div>
+
+		
+		<div class="c-leadphoto c-leadphoto--subsite">
+		
+			
+		
+			<picture>
+				<source srcset="img/owners@2565.jpg" media="(min-width: 1441px)">
+				<source srcset="img/owners@1440.jpg" media="(min-width: 1025px)">
+				<source srcset="img/owners@1024.jpg" media="(min-width: 321px)">
+				
+				<img srcset="img/owners@320.jpg" alt="">
+			</picture>
+		</div>
+		
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+				<div class="c-breadcrumbs">
+					<a href="#">Home</a> <span>Owners</span>
+				</div>
+			
+				<header class="o-header">
+					<h1>Owners</h1>
+				</header>
+		
+		
+				<div class="c-article u-cols">
+					<p>
+					Successful marketing of your property starts with a valuation to determine the ideal selling price.
+					Our expert brokers have in-depth knowledge of the market and will determine the potential of your property with you. We aim to identify the best achievable price on the market and to find the right buyer for you. We are strategically positioned to set up the actions which will lead to successful transaction at the best conditions in terms of price and delay.
+					</p>
+					
+					<p>
+					Your property is unique and we will highlight it. Haussmann Riviera Real Estate has partners located all over the world and we provide an international marketing network through our correspondents in  London, Geneva , Moscow, Astana …
+					</p>
+					
+					<p>
+					We have been chosen as the designated correspondent for some of the leading international real estate companies. Our clients are mainly foreigners: British, Scandinavians, Swiss, German, Russians and citzens of other eastern countries…
+					</p>
+					
+					<p>
+		We offer you a personal assistance in order to finalize a transaction in optimal legal and financial condition taking in consideration your fiscal situation:
+					</p>
+		
+					<ul>
+						<li>
+		With the Notary in charge of the sale we examine the impact of capital gain taxation and the eventual allowances applicable to you
+						</li>
+						
+						<li>
+		With your advisers we examine matters related to urbanism in order to anticipate all situations
+						</li>
+						
+						<li>
+		If your property needs refurbishing works we can, with our partners architects and builders calculate the costs and eventually examine a possible 
+		project which can be helpful for potential buyers
+						</li>
+						
+						<li>
+		We assist in organizing the compulsory diagnostics and measurement of the property
+						</li>
+						
+						<li>
+		Negotiations in view to obtain an agreement with a potential buyer are conducted in a professional and transparent way through our multilingual and dynamic commercial team
+						</li>
+						
+						<li>
+		From the signature of the preliminary agreement to the final sale’s contract we provide with a full assistance
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		@@include('./includes/contactform.html')
+		@@include('./includes/rent2.html')
+		
+		
+		<div class="o-wrap o-wrap--base">
+			<footer class="c-footer">
+			
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Quick links</h4>
+					
+					<nav class="c-nav c-nav--footer">
+					@@include('./includes/nav.html', { "owners": "is-active" })
+					</nav>
+				</div>
+
+
+				<div class="c-footer__col">
+					@@include('./includes/contact-us.html')
+
+				</div>
+				
+				
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Language</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul class="c-flags">
+							@@include('./includes/flags.html')
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="c-footer__col">
+					@@include('./includes/follow-us.html')
+				</div>
+
+			</footer>
+			
+			
+			<div class="c-bottomline">
+				<p class="c-bottomline__copyrights">&copy; 2017 All Rights Reserved <a href="//domazur.pl">Domazur</a></p>
+				<p>Realizacja: <a href="//loging.pl" target="_blank">Loging.pl</a></p>
+			</div>
+		</div>		
+		
+	</div>
+
+
+	@@include('./includes/scripts.html')
+
+</body>
+</html>

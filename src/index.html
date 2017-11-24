@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-US">
+@@include('./includes/head.html')
+<body class="no-overflow">
+
+	<div class="o-container">
+
+		<div class="c-top">
+			<div class="o-wrap o-wrap--base">
+				<a href="index.html" class="c-logo">
+					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
+				</a>
+				
+				@@include('./includes/toolbar.html')
+				
+				<nav class="c-nav c-nav--top">
+				@@include('./includes/nav.html', { "home": "is-active" })
+				</nav>
+			</div>
+		</div>
+
+		
+		<div class="c-leadphoto c-leadphoto--home">			
+		
+			<picture>
+				<source srcset="img/home@2565.jpg" media="(min-width: 1441px)">
+				<source srcset="img/home@1440.jpg" media="(min-width: 1025px)">
+				<source srcset="img/home@1024.jpg" media="(min-width: 321px)">
+				
+				<img srcset="img/home@320.jpg" alt="">
+			</picture>
+			
+			<div class="c-search" id="search">
+				<div class="c-search__label c-search__label--title">
+					<h4>Search<br> Property</h4>
+				</div>
+				
+				<div class="c-search__items js-items">
+					<div class="c-search__item">
+						<select class="nice-select">
+							<option>Buy</option>
+							<option>Buy</option>
+							<option>Buy</option>
+						</select>
+					</div>
+					
+					<div class="c-search__item">
+						<select class="nice-select">
+							<option>Country</option>
+							<option>Country</option>
+							<option>Country</option>
+						</select>
+					</div>
+					
+					<div class="c-search__item">
+						<select class="nice-select">
+							<option>Region</option>
+							<option>Region</option>
+							<option>Region</option>
+						</select>
+					</div>
+					
+					<div class="c-search__item">
+						<select class="nice-select">
+							<option>Area</option>
+							<option>Area</option>
+							<option>Area</option>
+						</select>
+					</div>
+					
+					<div class="c-search__item">
+						<select class="nice-select">
+							<option>Town</option>
+							<option>Town</option>
+							<option>Town</option>
+						</select>
+					</div>
+					
+					<div class="c-search__item">
+						<select class="nice-select">
+							<option>Property type</option>
+							<option>Property type</option>
+							<option>Property type</option>
+						</select>
+					</div>
+					
+					<div class="c-search__item">
+						<input type="text" placeholder="Price Min">
+					</div>
+										
+					<div class="c-search__item">
+						<input type="text" placeholder="Price Max">
+					</div>
+					
+					<div class="c-search__item">
+						<input type="text" value="Ref: GR. K01-ML001">
+					</div>
+					
+					<div class="c-search__item c-search__item--submit"></div>
+				</div>
+				
+				<div class="c-search__label c-search__label--submit">
+					<a href="#" class="o-btn o-btn--gradient o-btn--big" id="searchSubmit">Search</a>
+				</div>	
+				
+				<div class="c-search__label c-search__label--more js-more">
+					<a href="#" class="o-btn o-btn--border o-btn--big o-btn--doubleborder" id="moreOptions">More options</a>
+				</div>		
+			</div>
+		</div>
+
+
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+			
+				<header class="o-header">
+					<h2>Buy - our recommended</h2>
+		
+					<div class="o-header__line">
+						<div class="o-header__lead">
+							<img src="img/icons/buy.png" alt="" width="52" height="33">
+						</div>
+					</div>
+				</header>
+				
+				<div class="swiper-container" id="buy">
+					<div class="swiper-wrapper">
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-1.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-2.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-3.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-4.html')
+						</div>
+
+						
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-1.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-2.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-3.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-4.html')
+						</div>
+						
+						
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-1.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-2.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-3.html')
+						</div>
+				
+						<div class="swiper-slide">
+							@@include('./includes/buy-box-4.html')
+						</div>=
+				
+					</div><!-- /swiper-wrapper -->
+					
+					<div class="swiper-pagination"></div>
+				</div><!-- /swiper-container -->
+			</div><!-- /section -->
+		</div>
+
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+			
+				<header class="o-header">
+					<h2>Rent - our recommended</h2>
+					<div class="o-header__line">
+						<div class="o-header__lead">
+							<img src="img/icons/rent.png" alt="" width="37" height="39">
+						</div>
+					</div>
+				</header>
+			
+				<div class="o-grid">
+				<div class="c-box">
+					<div class="c-box__header c-box__header--top">
+						<p class="c-box__title c-box__title--big">Requebrune Cap Martin</p>
+						<p class="c-box__title c-box__title--small">France - Martin</p>
+					</div>
+					
+					<div class="c-box__frame">
+						<div class="c-box__photo">
+							<a href="details.html" class="o-btn o-btn--gradient o-btn--top">Rent</a>
+							<img src="img/rent-01--landscape.jpg" alt="" width="640" height="395">
+						</div>
+						
+						<div class="c-box__details">
+							<div class="c-box__info">
+								<p class="c-box__price">Price on request</p>
+								<p class="o-meta o-meta--small">
+									<span>Ref:</span> <span>DA 39</span>
+								</p>
+							</div>
+							
+							<div class="c-box__btn">
+								<a href="#" class="o-btn o-btn--border">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				@@include('./includes/rent-box-2.html')
+				@@include('./includes/rent-box-3.html')
+				
+				</div>
+			</div><!-- /section -->
+		</div>
+
+				
+		@@include('./includes/featured-offers.html')
+		
+		
+		@@include('./includes/partnership.html')
+		
+		
+		@@include('./includes/rent2.html')
+		
+		
+		<div class="o-wrap o-wrap--base">
+			<footer class="c-footer">
+			
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Quick links</h4>
+					
+					<nav class="c-nav c-nav--footer">
+					@@include('./includes/nav.html', { "home": "is-active" })
+					</nav>
+				</div>
+
+
+				<div class="c-footer__col">
+					@@include('./includes/contact-us.html')
+
+				</div>
+				
+				
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Language</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul class="c-flags">
+							@@include('./includes/flags.html')
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="c-footer__col">
+					@@include('./includes/follow-us.html')
+				</div>
+
+			</footer>
+			
+			
+			<div class="c-bottomline">
+				<p class="c-bottomline__copyrights">&copy; 2017 All Rights Reserved <a href="//domazur.pl">Domazur</a></p>
+				<p>Realizacja: <a href="//loging.pl" target="_blank">Loging.pl</a></p>
+			</div>
+		</div>
+	</div>
+
+
+	@@include('./includes/scripts.html')
+
+</body>
+</html>

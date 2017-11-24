@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+@@include('./includes/head.html')
+<body class="no-overflow">
+
+	<div class="o-container">
+
+		<div class="c-top">
+			<div class="o-wrap o-wrap--base">
+				<a href="index.html" class="c-logo">
+					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
+				</a>
+				
+				@@include('./includes/toolbar.html')
+				
+				<nav class="c-nav c-nav--top">
+				@@include('./includes/nav.html', { "owners": "is-active" })
+				</nav>
+			</div>
+		</div>
+
+		
+		<div class="c-leadphoto c-leadphoto--subsite">
+		
+			
+		
+			<picture>
+				<source srcset="img/buy@2565.jpg" media="(min-width: 1441px)">
+				<source srcset="img/buy@1440.jpg" media="(min-width: 1025px)">
+				<source srcset="img/buy@1024.jpg" media="(min-width: 321px)">
+				
+				<img srcset="img/buy@320.jpg" alt="">
+			</picture>
+		</div>
+		
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section o-section--boxes">
+				<div class="c-breadcrumbs">
+					<a href="#">Home</a> <span>Buy</span>
+				</div>
+			
+				<header class="o-header">
+					<h1>Buy</h1>
+					
+					<div class="o-header__line">
+						<div class="o-header__lead">
+							<img src="img/icons/buy.png" alt="" width="52" height="33">
+						</div>
+					</div>
+				</header>
+
+
+				<div class="o-grid">
+					@@include('./includes/buy-box-1.html')
+					@@include('./includes/buy-box-2.html')
+					@@include('./includes/buy-box-3.html')
+					@@include('./includes/buy-box-4.html')
+					
+					@@include('./includes/buy-box-3.html')
+					@@include('./includes/buy-box-4.html')
+					@@include('./includes/buy-box-1.html')
+					@@include('./includes/buy-box-2.html')
+					
+					@@include('./includes/buy-box-1.html')
+					@@include('./includes/buy-box-2.html')
+					@@include('./includes/buy-box-3.html')
+					@@include('./includes/buy-box-4.html')
+				</div>				
+			</div>
+		</div>
+		
+		
+		@@include('./includes/featured-offers.html')
+		@@include('./includes/partnership.html')
+		@@include('./includes/rent2.html')
+		
+		
+		<div class="o-wrap o-wrap--base">
+			<footer class="c-footer">
+			
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Quick links</h4>
+					
+					<nav class="c-nav c-nav--footer">
+					@@include('./includes/nav.html', { "owners": "is-active" })
+					</nav>
+				</div>
+
+
+				<div class="c-footer__col">
+					@@include('./includes/contact-us.html')
+
+				</div>
+				
+				
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Language</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul class="c-flags">
+							@@include('./includes/flags.html')
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="c-footer__col">
+					@@include('./includes/follow-us.html')
+				</div>
+
+			</footer>
+			
+			
+			<div class="c-bottomline">
+				<p class="c-bottomline__copyrights">&copy; 2017 All Rights Reserved <a href="//domazur.pl">Domazur</a></p>
+				<p>Realizacja: <a href="//loging.pl" target="_blank">Loging.pl</a></p>
+			</div>
+		</div>
+		
+		
+		
+	</div>
+
+
+	@@include('./includes/scripts.html')
+
+</body>
+</html>
