@@ -1,4 +1,22 @@
 .c-partners {
-	@extend %flex;
-	justify-content: space-around;
+	//@extend %flex;
+	//justify-content: space-around;
+	
+	.swiper
+
+	&__item {
+		//width: 240px;
+		
+		img {
+			margin: 0 auto;
+		}
+
+		@media screen and ( min-width: $tablet + 1px )  and ( max-width: $laptop + px ) {
+			//width: grid(240, $laptop);
+		}
+	}
+	
+	.swiper-pagination {
+		padding-top: 40px;
+	}
 }

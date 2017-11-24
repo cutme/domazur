@@ -1,8 +1,14 @@
 .c-logo {
 	@extend %abs;
 	left: 0; top: 45px;
+	width: 208px;
 	
 	@media screen and ( max-width: $laptop + px ) {
 		left: 40px;
+	}
+	
+	@media screen and ( max-width: $tablet + px ) {
+		top: 22px;
+		width: 259px;
 	}
 }

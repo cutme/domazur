@@ -5,6 +5,7 @@
 	color: $c-gray-2;
 	
 	&__item {
+		@extend %flex;
 		float: left;
 		margin-right: 30px;
 		
@@ -17,15 +18,25 @@
 		}
 	}
 	
-	&__phone {
-		&:first-of-type {
-			&:after {
-				margin-left: 2px;
-				content: '/';
-			}
+	&__phones {
+		@extend %flex;
+		
+		@media screen and ( max-width: $tablet + px ) {
+		    flex-direction: column;
 		}
 	}
 	
+	&__phone {
+		@media screen and ( min-width: $tablet + 1px ) {
+			&:first-of-type {
+				&:after {
+					margin-left: 2px;
+					content: '/';
+				}
+			}
+		}
+	}
+
 	a {
 		&:hover {
 			color: white;

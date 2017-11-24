@@ -92,6 +92,30 @@
 			parent.removeChild(node);	// Detach node from DOM.		
 			target.append(node, next);	// Append
 		}
+		
+		function follow() {
+			var status = false,
+				el = document.getElementsByClassName('js-followNav')[0],
+				src = document.getElementsByClassName('js-follow')[0],
+				dest = document.getElementsByClassName('js-contact')[0];
+
+			var initFollow = function() {
+				var ww = window.innerWidth;
+
+				if (ww <= 1024 && status !== true) {
+					detach( el, dest );
+					status = true;
+				}
+				
+				if (ww > 1024 && status !== false) {
+					detach( el, src );
+					status = false;
+				}
+			};
+			
+			initFollow();
+			window.addEventListener('resize', initFollow);
+		}
 
 		function searchSubmit() {
 			var status = false,
@@ -117,7 +141,8 @@
 			window.addEventListener('resize', init);
 		}
 
-		searchSubmit();		
+		follow();
+		searchSubmit();	
 	};
 	
 	var showOnScroll = function() {

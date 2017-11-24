@@ -8,9 +8,9 @@
 		<div class="c-top">
 			<div class="o-wrap o-wrap--base">
 				<a href="index.html" class="c-logo">
-					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
+					<img src="img/logo-domazur.png" alt="domazur">
 				</a>
-				
+
 				@@include('./includes/toolbar.html')
 				
 				<nav class="c-nav c-nav--top">
@@ -184,7 +184,7 @@
 		</div>
 
 		
-		<div class="o-wrap o-wrap--content anim anim--up">
+		<div class="o-wrap o-wrap--content">
 			<div class="o-section">
 			
 				<header class="o-header">
@@ -243,8 +243,8 @@
 		
 		<div class="o-wrap o-wrap--base anim anim--up">
 			<footer class="c-footer">
-			
-				<div class="c-footer__col">
+
+				<div class="c-footer__col c-footer__col--quick">
 					<h4 class="c-footer__title">Quick links</h4>
 					
 					<nav class="c-nav c-nav--footer">
@@ -253,13 +253,12 @@
 				</div>
 
 
-				<div class="c-footer__col">
+				<div class="c-footer__col c-footer__col--contact js-contact">
 					@@include('./includes/contact-us.html')
-
 				</div>
 				
 				
-				<div class="c-footer__col">
+				<div class="c-footer__col c-footer__col--language">
 					<h4 class="c-footer__title">Language</h4>
 					
 					<nav class="c-nav c-nav--footer">
@@ -270,7 +269,7 @@
 				</div>
 				
 				
-				<div class="c-footer__col">
+				<div class="c-footer__col c-footer__col--follow js-follow">
 					@@include('./includes/follow-us.html')
 				</div>
 

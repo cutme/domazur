@@ -2,4 +2,11 @@
 	@extend %flex;
 	@extend %flex-spacebetween;
 	@extend %flex-wrap;
+	
+	&--medium {
+		@media screen and ( max-width: $tablet - 1px ) {
+			justify-content: center;
+		}
+		
+	}
 }

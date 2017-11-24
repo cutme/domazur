@@ -2,6 +2,10 @@
 	@extend %clear;
 	margin-bottom: 130px;
 	
+	@media screen and ( max-width: $tablet_portrait + px ) {
+		margin-bottom: 70px;
+	}
+	
 	&--nobottommargin {
 		margin-bottom: 0;
 	}

@@ -1,8 +1,21 @@
 .c-bottomline {
 	@extend %flex;
 	@extend %flex-spacebetween;
+	padding: 35px 45px 40px 45px;
 	font-size: rem(14);
 	color: $c-gray-1;
+	
+	@media screen and ( max-width: $laptop + px ) {
+		padding: {
+			left: 0;
+			right: 0;
+		}
+	}
+	
+	@media screen and ( max-width: $smartphone + px ) {
+		flex-direction: column;
+	    text-align: center;
+	}
 	
 	a {
 		color: $c-orange-1;

@@ -3,12 +3,68 @@
 	@extend %flex-spacebetween;
 	border-top: 1px solid $c-gray-3;
 	border-bottom: 1px solid $c-gray-3;
-	padding: 90px 45px 40px 45px;
+	padding: 90px 45px 0 45px;
 	color: $c-gray-1;
+	
+	@media screen and ( max-width: $laptop + px ) {
+		padding: {
+			left: 0;
+			right: 0;
+		}
+	}
+	
+	@media screen and ( max-width: $tablet + px ) {
+		justify-content: flex-start;
+		padding: {
+			top: 70px;
+		}
+	}
+	
+	@media screen and ( max-width: $smartphone + px ) {
+		flex-wrap: wrap;
+	}
+	
+	&__col {
+
+		&--follow {
+			@media screen and ( max-width: $tablet + px ) {
+				display: none;
+			}
+		}
+
+		@media screen and ( max-width: $tablet + px ) {
+			
+			&--contact {
+				min-width: 245px;
+			}
+			
+			&--language {
+				width: grid(245, $tablet - 80);
+				margin-left: auto;
+			}
+			
+			&--quick {
+				width: grid(245, $tablet - 80);
+			}
+		}
+		
+		@media screen and ( max-width: $smartphone + px ) {
+			width: 100%;
+			
+			&--language {
+				margin-bottom: 10px;
+			}
+			
+		}
+	}
 
 	&__title {
 		margin-bottom: 40px;
 		font-size: rem(20);
 		color: $c-orange-1;
+	}
+
+	.c-nav {
+		margin-bottom: 40px;
 	}	
 }

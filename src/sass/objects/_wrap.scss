@@ -25,7 +25,22 @@
 	}
 	
 	&--content {
-		width: 1350px;
+		
+		
+		@media screen and ( min-width: $laptop + px ) {
+			max-width: 1350px;
+		}
+		
+		@media screen and ( max-width: $laptop - 1px ) {
+			max-width: 940px;
+		}
+		
+		@media screen and ( max-width: $tablet - 1px ) {
+			max-width: 640px;
+		}
+		
+		@media screen and ( max-width: $smartphone + px ) {
+			max-width: 300px;
+		}
 	}
-	
 }

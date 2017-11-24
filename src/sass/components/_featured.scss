@@ -1,16 +1,22 @@
 .c-featured {
 
 	&__item {
-		@extend %flex;
-		@extend %flex-y;
-		width: 50%;
-		
-		@media screen and ( min-width: $laptop + 1px ) {
+
+		@media screen and ( min-width: $tablet_portrait + 1px ) {
+			display: flex;
+			align-items: center;
+			width: 50%;
 			min-height: 506px;
 		}
 		
+		@media screen and ( max-width: $tablet_portrait + px ) {
+			margin-bottom: 40px;
+		}
+		
 		&--description {
-			max-width: 736px;
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				max-width: 740px;
+			}
 		}
 		
 		&--photo {
@@ -18,28 +24,58 @@
 			overflow: hidden;
 			
 			img {
-				@extend %abs;
-				top: 0; right: 0;
-				width: auto;
-				max-width: none;
-				height: 100%;
+				@media screen and ( min-width: $tablet_portrait + 1px ) {
+					position: absolute;
+					top: 0; right: 0;
+					width: auto;
+					max-width: none;
+					height: 100%;
+				}
+			}
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				margin-bottom: 40px;
 			}
 		}
 	}
 	
 	&__lead {
 		@extend %font-serif;
+		line-height: 1.2;
 		font-size: rem(30);
 	}	
 	
 	&__row {
-		@extend %flex;
+	
+		@media screen and ( min-width: $tablet_portrait + 1px ) {
+			display: flex;
+		}
+		
+		@media screen and ( max-width: $tablet_portrait + px ) {
+			max-width: 512px;
+			margin: 0 auto;
+		}
 		
 		&:nth-child(odd) {
 			border-top: 1px solid $c-gray-3;
 
 			.c-featured__item {
-				padding-left: 120px;
+				
+				@media screen and ( min-width: $laptop + 1px ) {
+					padding-left: 115px;
+				}
+				
+				@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $laptop + px ) {
+					padding-left: grid(115, $laptop);
+				}	
+
+				&--description {
+					padding-right: 20px;
+					
+					@media screen and ( max-width: $laptop + px ) {
+						padding-right: 40px;
+					}
+				}
 			}
 			
 			.c-featured__item--photo {
@@ -65,7 +101,22 @@
 			text-align: right;
 			
 			.c-featured__item {
-				padding-right: 120px;
+
+				@media screen and ( min-width: $laptop + 1px ) {
+					padding-right: 115px;
+				}
+				
+				@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $laptop + px ) {
+					padding-right: grid(115, $laptop);
+				}
+				
+				&--description {
+					padding-left: 20px;
+					
+					@media screen and ( max-width: $laptop + px ) {
+						padding-left: 40px;
+					}
+				}
 			}
 			
 			.c-description__row--cta {
@@ -92,8 +143,4 @@
 			}
 		}
 	}
-	
-		
 }
-
-

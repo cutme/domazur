@@ -75,8 +75,10 @@
 						
 						<li class="c-toolbar__item">
 							<i class="icon-phone"></i>
-							<a href="#" class="c-toolbar__phone">0033 640615143</a>
-							<a href="#" class="c-toolbar__phone">0033 630811003</a>
+							<div class="c-toolbar__phones">
+								<a href="#" class="c-toolbar__phone">0033 640615143</a>
+								<a href="#" class="c-toolbar__phone">0033 630811003</a>
+							</div>
 						</li>
 					</ul>
 					
@@ -552,7 +554,13 @@
 			<ul class="c-featured">
 				<li class="c-featured__row">
 					<div class="c-featured__item c-featured__item--photo">
-						<img src="img/featured-01@2565.jpg" alt="" width="1282" height="506">
+						<picture>
+							<source srcset="img/featured-01@2565.jpg" media="(min-width: 1441px)">
+							<source srcset="img/featured-01@1440.jpg" media="(min-width: 1025px)">
+							<source srcset="img/featured-01@1024.jpg" media="(min-width: 321px)">
+							
+							<img srcset="img/featured-01@320.jpg" alt="">
+						</picture>
 					</div>
 					
 					<div class="c-featured__item c-featured__item--description">
@@ -604,7 +612,13 @@
 				
 				<li class="c-featured__row">
 					<div class="c-featured__item c-featured__item--photo">
-						<img src="img/featured-02@2565.jpg" alt="" width="1282" height="506">
+						<picture>
+							<source srcset="img/featured-02@2565.jpg" media="(min-width: 1441px)">
+							<source srcset="img/featured-02@1440.jpg" media="(min-width: 1025px)">
+							<source srcset="img/featured-02@1024.jpg" media="(min-width: 321px)">
+							
+							<img srcset="img/featured-02@320.jpg" alt="">
+						</picture>
 					</div>
 					
 					<div class="c-featured__item c-featured__item--description">
@@ -651,24 +665,57 @@
 			</ul>
 		</div>
 
-				<div class="o-section anim anim--up">
-			<header class="o-header">
-				<h2>Partnerships</h2>
-				<div class="o-header__line">
-					<div class="o-header__lead">
-						<img src="img/icons/partners.png" alt="" width="59" height="40">
+				<div class="o-wrap o-wrap--base anim anim--up">
+			<div class="o-section">
+				<header class="o-header">
+					<h2>Partnerships</h2>
+					<div class="o-header__line">
+						<div class="o-header__lead">
+							<img src="img/icons/partners.png" alt="" width="59" height="40">
+						</div>
 					</div>
-				</div>
-			</header>
-
-			<div class="c-partners">
-			
-				<img src="img/partner-01.png" alt="partner-01" width="240" height="78">
-				<img src="img/partner-02.png" alt="partner-02" width="240" height="70">
-				<img src="img/partner-03.png" alt="partner-03" width="240" height="70">
-				<img src="img/partner-04.png" alt="partner-04" width="240" height="70">
-				<img src="img/partner-05.png" alt="partner-05" width="240" height="70">
+				</header>
+	
+				<div class="c-partners">
+				
+					<div class="swiper-container" id="partners">
+						<div class="swiper-wrapper">
+					
+							<div class="swiper-slide">
+								<div class="c-partners__item">
+									<img src="img/partner-01.png" alt="" width="240" height="78">
+								</div>
+							</div>
+					
+							<div class="swiper-slide">
+								<div class="c-partners__item">
+									<img src="img/partner-02.png" alt="" width="240" height="70">
+								</div>
+							</div>
+							
+							<div class="swiper-slide">
+								<div class="c-partners__item">
+									<img src="img/partner-03.png" alt="" width="240" height="70">
+								</div>
+							</div>
+							
+							<div class="swiper-slide">
+								<div class="c-partners__item">
+									<img src="img/partner-04.png" alt="" width="240" height="70">
+								</div>
+							</div>
+							
+							<div class="swiper-slide">
+								<div class="c-partners__item">
+									<img src="img/partner-05.png" alt="" width="240" height="70">
+								</div>
+							</div>
+						</div>
 						
+						<div class="swiper-pagination"></div>
+					</div>
+							
+				</div>
 			</div>
 		</div>
 
@@ -684,7 +731,7 @@
 					</div>
 				</header>
 
-				<div class="o-grid">
+				<div class="o-grid o-grid--medium">
 					<div class="c-box">
 						<div class="c-box__frame">
 							<div class="c-box__photo">							
@@ -850,35 +897,37 @@
 				
 				<div class="c-footer__col">
 					
-					<h4 class="c-footer__title">Follow us</h4>
-					
-					<nav class="c-nav c-nav--footer c-nav--social">
-						<ul>
-							<li>
-								<a href="#" class="icon-google"></a>
-							</li>
-							
-							<li>
-								<a href="#" class="icon-facebook"></a>
-							</li>
-							
-							<li>
-								<a href="#" class="icon-twitter"></a>
-							</li>
-							
-							<li>
-								<a href="#" class="icon-instagram"></a>
-							</li>
-							
-							<li>
-								<a href="#" class="icon-pinterest"></a>
-							</li>
-							
-							<li>
-								<a href="#" class="icon-youtube"></a>
-							</li>
-						</ul>	
-					</nav>
+					<div class="js-followNav">
+						<h4 class="c-footer__title">Follow us</h4>
+						
+						<nav class="c-nav c-nav--footer c-nav--follow">
+							<ul>
+								<li>
+									<a href="#" class="icon-google"></a>
+								</li>
+								
+								<li>
+									<a href="#" class="icon-facebook"></a>
+								</li>
+								
+								<li>
+									<a href="#" class="icon-twitter"></a>
+								</li>
+								
+								<li>
+									<a href="#" class="icon-instagram"></a>
+								</li>
+								
+								<li>
+									<a href="#" class="icon-pinterest"></a>
+								</li>
+								
+								<li>
+									<a href="#" class="icon-youtube"></a>
+								</li>
+							</ul>	
+						</nav>
+					</div>
 
 				</div>
 
