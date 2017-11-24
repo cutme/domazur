@@ -4,6 +4,7 @@
 
 .anim {
 	@extend %anim--medium;
+	animation-delay: 500ms;
 	will-change: transform, opacity;
 	
 	&--up {
