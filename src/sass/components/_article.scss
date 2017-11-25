@@ -20,17 +20,21 @@
 		padding: 10px;
 	}
 	
+	h2, h3, h4 {
+		color: white;
+	}
+	
+	h2 {
+		@extend %font-serif;
+		font-size: rem(30);
+	}
+	
 	h3, h4 {
 		font-size: rem(18);
-		color: white;
 	}
 	
 	h3 {
 		text-transform: uppercase;
-	}
-	
-	h4 {
-		
 	}
 	
 	h5 {

@@ -14,7 +14,7 @@
 	&__item {
 		@extend %flex;
 		
-		@media screen and ( min-width: $tablet_portrait +1 px ) {
+		@media screen and ( min-width: $tablet_portrait + 1px ) {
 			float: left;
 			margin-right: 30px;
 		}		

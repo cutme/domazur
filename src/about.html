@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+@@include('./includes/head.html')
+<body class="no-overflow">
+
+	<div class="o-container js-container">
+
+		
+		@@include('./includes/top.html')
+
+
+		<div class="c-topbar" id="menu1">
+			<div class="o-wrap o-wrap--base">
+				<nav class="c-nav c-nav--top">
+				@@include('./includes/nav.html', { "about": "is-active" })
+				</nav>
+			</div>
+		</div>
+
+		
+		<div class="c-leadphoto c-leadphoto--subsite">
+		
+			<picture>
+				<source srcset="img/services@2565.jpg" media="(min-width: 1441px)">
+				<source srcset="img/services@1440.jpg" media="(min-width: 1025px)">
+				<source srcset="img/services@1024.jpg" media="(min-width: 321px)">
+				
+				<img srcset="img/services@320.jpg" alt="">
+			</picture>
+			
+			@@include('./includes/search.html')
+		</div>
+		
+		
+		<div class="o-wrap o-wrap--content">
+			<div class="o-section">
+				<div class="c-breadcrumbs">
+					<a href="index.html">Home</a> <span>About us</span>
+				</div>
+			
+				<header class="o-header">
+					<h1>About us</h1>
+				</header>
+		
+		
+				<div class="c-article">
+
+					<h2 class="u-align-center">Welcome at Domazur Luxury Homes.</h2>
+					
+					<br><br>
+					
+					<div class="u-cols">
+					
+						<p>
+A purchase of a house or an apartment in a foreign country is a complex matter.
+Getting an understanding of various areas and alternatives available on the market; trying to get a notion of what is "the correct market price"; having a notary who finds time for Your case, and ideally who speaks Your language; setting up the structure in the way which is most efficient from tax point of view; having a realistic evaluation of cost and time of refurbishment and administration issues involved; help with setting up the bank accounts - those are just a few aspects with which You’ll be dealing during the search process.
+						</p>
+						
+						<p>
+And when You finally complete the purchase and collect the keys - the "the hassle" doesn’t end, You need to set up the utility services, pay local taxes, know where to look for the furniture, where to repair cars at "local" prices, how to enroll children to school if You moving permanently, where to seek medical advice etc.
+						</p>
+						
+						
+						<p>						
+At Domazur we understand all those needs, and we have helped many clients to make the search and buying process as well as the subsequent settling in, as painless and time/cost efficient as possible. They are happy to testify to our professionalism, "can do" attitude, our extensive network of local contacts, honesty and last but not least - our inexhaustible (nearly) patience.
+						</p>
+						
+						<p>
+We are here to help You make Your dream come true.
+						</p>
+						
+						<h4>Hope to see You soon!</h4>
+
+					
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		@@include('./includes/contactform.html')
+		@@include('./includes/featured-offers.html')
+		@@include('./includes/rent2.html')
+		
+		
+		<div class="o-wrap o-wrap--base">
+			<footer class="c-footer">
+			
+				<div class="c-footer__col">
+					<h4 class="c-footer__title">Quick links</h4>
+					
+					<nav class="c-nav c-nav--footer">
+					@@include('./includes/nav.html', { "services": "is-active" })
+					</nav>
+				</div>
+
+
+				<div class="c-footer__col c-footer__col--contact js-contact">
+					@@include('./includes/contact-us.html')
+				</div>
+				
+				
+				<div class="c-footer__col c-footer__col--language">
+					<h4 class="c-footer__title">Language</h4>
+					
+					<nav class="c-nav c-nav--footer">
+						<ul class="c-flags">
+							@@include('./includes/flags.html')
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="c-footer__col c-footer__col--follow js-follow">
+					@@include('./includes/follow-us.html')
+				</div>
+
+			</footer>
+			
+			
+			<div class="c-bottomline">
+				<p class="c-bottomline__copyrights">&copy; 2017 All Rights Reserved <a href="//domazur.pl">Domazur</a></p>
+				<p>Realizacja: <a href="//loging.pl" target="_blank">Loging.pl</a></p>
+			</div>
+		</div>
+
+	</div>
+
+
+	@@include('./includes/scripts.html')
+
+</body>
+</html>

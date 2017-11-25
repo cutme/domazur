@@ -42,11 +42,12 @@
 	&__toolbar {
 		@extend %abs; 
 		@extend %anim;
+		@extend %abs-y;
 		z-index: 10;
-		right: 0; top: 48px;
+		right: 0; //top: 48px;
 		
 		@media screen and ( max-width: $tablet + px ) {
-			top: 30px;
+			//top: 30px;
 		}
 		
 		@extend %mobile;

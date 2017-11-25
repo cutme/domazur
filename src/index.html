@@ -5,22 +5,10 @@
 
 	<div class="o-container js-container">
 
-		<div class="o-wrap o-wrap--base o-wrap--top">
-			<div class="c-top">
-				<a href="index.html" class="c-logo">
-					<img src="img/logo-domazur.png" alt="domazur">
-				</a>
-
-				<div class="c-top__navicons">
-					<div class="c-navicon c-navicon--menu-2 icon-hamburger--mini js-menu2"></div>
-					<div class="c-navicon c-navicon--menu-1 icon-hamburger js-menu1"></div>
-				</div>
-
-				@@include('./includes/toolbar.html')
-			</div>
-		</div>			
 		
-		
+		@@include('./includes/top.html')
+
+
 		<div class="c-topbar" id="menu1">
 			<div class="o-wrap o-wrap--base">
 				<nav class="c-nav c-nav--top">
@@ -40,83 +28,7 @@
 				<img srcset="img/home@320.jpg" alt="">
 			</picture>
 			
-			<div class="c-search" id="search">
-				<div class="c-search__label c-search__label--title">
-					<h4>Search<br> Property</h4>
-				</div>
-				
-				<div class="c-search__items js-items">
-					<div class="c-search__item">
-						<select class="nice-select">
-							<option>Buy</option>
-							<option>Buy</option>
-							<option>Buy</option>
-						</select>
-					</div>
-					
-					<div class="c-search__item">
-						<select class="nice-select">
-							<option>Country</option>
-							<option>Country</option>
-							<option>Country</option>
-						</select>
-					</div>
-					
-					<div class="c-search__item">
-						<select class="nice-select">
-							<option>Region</option>
-							<option>Region</option>
-							<option>Region</option>
-						</select>
-					</div>
-					
-					<div class="c-search__item">
-						<select class="nice-select">
-							<option>Area</option>
-							<option>Area</option>
-							<option>Area</option>
-						</select>
-					</div>
-					
-					<div class="c-search__item">
-						<select class="nice-select">
-							<option>Town</option>
-							<option>Town</option>
-							<option>Town</option>
-						</select>
-					</div>
-					
-					<div class="c-search__item">
-						<select class="nice-select">
-							<option>Property type</option>
-							<option>Property type</option>
-							<option>Property type</option>
-						</select>
-					</div>
-					
-					<div class="c-search__item">
-						<input type="text" placeholder="Price Min">
-					</div>
-										
-					<div class="c-search__item">
-						<input type="text" placeholder="Price Max">
-					</div>
-					
-					<div class="c-search__item">
-						<input type="text" value="Ref: GR. K01-ML001">
-					</div>
-					
-					<div class="c-search__item c-search__item--submit"></div>
-				</div>
-				
-				<div class="c-search__label c-search__label--submit">
-					<a href="#" class="o-btn o-btn--gradient o-btn--big" id="searchSubmit">Search</a>
-				</div>	
-				
-				<div class="c-search__label c-search__label--more js-more">
-					<a href="#" class="o-btn o-btn--border o-btn--big o-btn--doubleborder" id="moreOptions">More options</a>
-				</div>		
-			</div>
+			@@include('./includes/search.html')
 		</div>
 
 
@@ -242,12 +154,8 @@
 		</div>
 
 				
-		@@include('./includes/featured-offers.html')
-		
-		
-		@@include('./includes/partnership.html')
-		
-		
+		@@include('./includes/featured-offers.html')		
+		@@include('./includes/partnership.html')		
 		@@include('./includes/rent2.html')
 		
 		

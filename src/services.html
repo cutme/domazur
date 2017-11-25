@@ -3,16 +3,14 @@
 @@include('./includes/head.html')
 <body class="no-overflow">
 
-	<div class="o-container">
+	<div class="o-container js-container">
 
-		<div class="c-top">
+		
+		@@include('./includes/top.html')
+
+
+		<div class="c-topbar" id="menu1">
 			<div class="o-wrap o-wrap--base">
-				<a href="index.html" class="c-logo">
-					<img src="img/logo-domazur.png" alt="domazur" width="208" height="45">
-				</a>
-				
-				@@include('./includes/toolbar.html')
-				
 				<nav class="c-nav c-nav--top">
 				@@include('./includes/nav.html', { "services": "is-active" })
 				</nav>
@@ -22,8 +20,6 @@
 		
 		<div class="c-leadphoto c-leadphoto--subsite">
 		
-			
-		
 			<picture>
 				<source srcset="img/services@2565.jpg" media="(min-width: 1441px)">
 				<source srcset="img/services@1440.jpg" media="(min-width: 1025px)">
@@ -31,13 +27,15 @@
 				
 				<img srcset="img/services@320.jpg" alt="">
 			</picture>
+			
+			@@include('./includes/search.html')
 		</div>
 		
 		
 		<div class="o-wrap o-wrap--content">
 			<div class="o-section">
 				<div class="c-breadcrumbs">
-					<a href="#">Home</a> <span>Services</span>
+					<a href="index.html">Home</a> <span>Services</span>
 				</div>
 			
 				<header class="o-header">
@@ -133,13 +131,12 @@
 				</div>
 
 
-				<div class="c-footer__col">
+				<div class="c-footer__col c-footer__col--contact js-contact">
 					@@include('./includes/contact-us.html')
-
 				</div>
 				
 				
-				<div class="c-footer__col">
+				<div class="c-footer__col c-footer__col--language">
 					<h4 class="c-footer__title">Language</h4>
 					
 					<nav class="c-nav c-nav--footer">
@@ -150,7 +147,7 @@
 				</div>
 				
 				
-				<div class="c-footer__col">
+				<div class="c-footer__col c-footer__col--follow js-follow">
 					@@include('./includes/follow-us.html')
 				</div>
 
