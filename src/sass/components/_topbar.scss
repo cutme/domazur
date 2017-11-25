@@ -1,0 +1,31 @@
+.c-topbar {
+	@extend %rel;
+	@extend %anim;
+	@extend %mobile;
+	background-color: $c-black;
+	will-change: transform;
+	
+	@media screen and ( min-width: $tablet_portrait + 1px ) {
+		height: 70px;
+	}
+
+	&.is-fixed {
+		position: fixed;
+		left: 0; 
+		top: -70px;
+		width: 100%;
+		z-index: 50;
+	}
+	
+	&.is-animed {
+		top: 0;
+	}
+	
+	.o-wrap {
+		height: 100%;
+		
+		@media screen and ( max-width: $tablet_portrait + px ) {
+			padding: 15px 30px;
+		}
+	}
+}

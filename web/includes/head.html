@@ -26,12 +26,11 @@
 			head.appendChild(link);
 	
 			link.onload = function () {
+				if (window.scrollY) {
+					window.scroll(0, 0);  // reset the scroll position to the top left of the document.
+				}
 				document.documentElement.removeAttribute('style');
-/*
-				setTimeout(function() {
-					setHeights();
-				}, 10);
-*/
+				document.body.className += " u-logo";
 			};
 		}
 	
@@ -41,10 +40,12 @@
 		
 		Pace.on('done', function() {
 			classie.remove( document.getElementsByTagName('body')[0], 'no-overflow' );
+			classie.remove( document.getElementsByTagName('body')[0], 'u-logo' );
 			
 			ctme.Flags.init();
 			ctme.Carousel.init();
 			ctme.Helper.nice();
+			ctme.Nav.init();
 			ctme.Search.init();
 			ctme.Helper.showOnScroll();
 

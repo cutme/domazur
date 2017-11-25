@@ -1,13 +1,23 @@
 .c-toolbar {
-	display: inline-block;
-	vertical-align: middle;
-	text-transform: uppercase;
 	color: $c-gray-2;
 	
+	@media screen and ( min-width: $tablet_portrait + 1px ) {
+		display: inline-block;
+		vertical-align: top;
+		text-transform: uppercase;
+	}
+
+	@media screen and ( max-width: $tablet_portrait + px ) {
+		padding: 15px 30px;
+	}
+
 	&__item {
 		@extend %flex;
-		float: left;
-		margin-right: 30px;
+		
+		@media screen and ( min-width: $tablet_portrait +1 px ) {
+			float: left;
+			margin-right: 30px;
+		}		
 		
 		i {
 			display: inline-block;
@@ -15,6 +25,16 @@
 			margin-right: 15px;
 			font-size: rem(22);
 			color: $c-orange-1;
+		}
+
+		&--email {
+			@media screen and ( min-width: $tablet_portrait + 1px) and ( max-width: 940px ) {
+				display: none;
+			}
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				margin-bottom: 20px;
+			}
 		}
 	}
 	
@@ -30,8 +50,8 @@
 		@media screen and ( min-width: $tablet + 1px ) {
 			&:first-of-type {
 				&:after {
-					margin-left: 2px;
-					content: '/';
+					margin-right: 4px;
+					content: ' / ';
 				}
 			}
 		}
@@ -39,10 +59,12 @@
 
 	a {
 		&:hover {
-			color: white;
-			
-			&:after {
-				color: $c-gray-1;
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				color: white;
+				
+				&:after {
+					color: $c-gray-1;
+				}
 			}
 		}
 	}

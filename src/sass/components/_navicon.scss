@@ -1,0 +1,48 @@
+.c-navicon {
+	width: 40px; //height: 30px;
+	text-align: center;
+	cursor: pointer;
+	
+	@media screen and ( max-width: $smartphone + px ) {
+		width: 30px;
+	}
+	
+	&:before {
+		transition: none;
+	}
+
+	&--menu-1 {
+		font-size: rem(30);
+		
+		@media screen and ( max-width: $smartphone + px ) {
+			font-size: rem(20);
+		}
+	}
+
+	&--menu-2 {
+		margin-right: 10px;
+		font-size: rem(30);
+		
+		@media screen and ( max-width: $smartphone + px ) {
+			margin-right: 0;
+		}
+		
+		&.icon-hamburger--mini {
+			@media screen and ( max-width: $smartphone + px ) {
+				font-size: rem(20);
+			}
+		}
+		
+		&.icon-line {
+			line-height: 30px;
+			font-size: rem(8);
+
+			@media screen and ( max-width: $smartphone + px ) {
+				line-height: 20px;
+				font-size: rem(4);
+			}
+		}
+	}
+	
+	
+}

@@ -1,11 +1,24 @@
 .c-lang {
 	@extend %rel;
-	width: 45px;
-	display: inline-block;
-	vertical-align: middle;
-	cursor: pointer;
 	
+	@media screen and ( min-width: $tablet_portrait + 1px ) {
+		width: 45px;
+		display: inline-block;
+		margin-top: -1px;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+	
+	@media screen and ( max-width: $tablet_portrait + px ) {
+		padding-left: 30px;
+	}
+
 	.c-flags--current {
+	
+		@media screen and ( max-width: $tablet_portrait + px ) {
+			display: none;
+		}
+	
 		&:after {
 			@extend %abs;
 			right: 7px; top: 6px;

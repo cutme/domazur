@@ -26,7 +26,6 @@
 	
 	&--content {
 		
-		
 		@media screen and ( min-width: $laptop + px ) {
 			max-width: 1350px;
 		}
@@ -42,5 +41,9 @@
 		@media screen and ( max-width: $smartphone + px ) {
 			max-width: 300px;
 		}
+	}
+	
+	&--top {
+		z-index: 100;
 	}
 }

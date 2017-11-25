@@ -1,7 +1,19 @@
+.icon-hamburger--mini:before {
+  content: "\e909";
+}
+.icon-line:before {
+  content: "\e90b";
+}
 .icon-arrow--left:before {
-  content: "\e900";
+  content: "\e903";
 }
 .icon-arrow--right:before {
+  content: "\e906";
+}
+.icon-close:before {
+  content: "\e900";
+}
+.icon-hamburger:before {
   content: "\e902";
 }
 .icon-arrow:before {
@@ -13,13 +25,10 @@
 .icon-facebook:before {
   content: "\e905";
 }
-.icon-featured:before {
-  content: "\e906";
-}
 .icon-google:before {
   content: "\e907";
 }
-.icon-instagram:before {
+.icon-Instagram:before {
   content: "\e908";
 }
 .icon-loop:before {

@@ -7,37 +7,45 @@
 
 	&--cloud {
 		@extend %flex;
-		@extend %anim;
-		position: absolute !important;
-		left: 20px;
-		top: 35px;
+		@extend %anim;		
 		flex-wrap: wrap;
-		width: 205px;
-		background-color: $c-black;
-		border: 1px solid $c-gray-3;
-		border-radius: 1px;
-		padding: 10px 20px 5px 20px;
-		opacity: 0;
-		transform: translateY(10px);
-		visibility: hidden;
-		
-		&.is-visible {
-			visibility: visible;	
-			transform: translateY(0);
-			opacity: 1;
-		}
+
+		@media screen and ( min-width: $tablet_portrait + 1px ) {
+			position: absolute !important;
+			left: 20px;
+			top: 35px;
+			opacity: 0;
+			width: 205px;
+			background-color: $c-black;
+			border: 1px solid $c-gray-3;
+			border-radius: 1px;
+			padding: 10px 20px 5px 20px;
+			transform: translateY(10px);
+			visibility: hidden;
+			
+			&.is-visible {
+				visibility: visible;	
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}		
 		
 		&:after {
-			@extend %abs-after;
-			left: 6px; top: -5px;
-			width: 10px; height: 10px;
-			background-color: $c-black;
-			border-left: 1px solid $c-gray-3;
-			border-top: 1px solid $c-gray-3;
-			transform: rotate(45deg);
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				position: absolute;
+				display: block;
+				content: ' ';
+				z-index: 5;
+				left: 6px; top: -5px;
+				width: 10px; height: 10px;
+				background-color: $c-black;
+				border-left: 1px solid $c-gray-3;
+				border-top: 1px solid $c-gray-3;
+				transform: rotate(45deg);
+			}
 		}
 		
-		@media screen and ( max-width: 1810px ) {
+		@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: 1810px ) {
 			left: auto;
 			right: 0;
 			
@@ -49,13 +57,23 @@
 		
 		span {
 			padding-left: 5px;
-			font-size: rem(14);
 			color: $c-gray-1;
+			
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				font-size: rem(14);
+			}
 		}
 		
 		li {
-			width: 50%;
 			margin-bottom: 5px;
+			
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				width: 50%;
+			}
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				width: 100%;
+			}
 		}
 	}
 	
@@ -89,11 +107,15 @@
 		}
 	}	
 	
-	a {
+	a {		
 		&:hover {
-			span {
-				color: white;
-			}
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				//.desktop & {
+					span {
+						color: white;
+					}
+				//}
+			}			
 		}
 	}
 	

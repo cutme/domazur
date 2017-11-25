@@ -171,6 +171,7 @@
 	
 	ctme.Helper = new Helper();
 	
+	
 	isMobile();
 	rwd();
 

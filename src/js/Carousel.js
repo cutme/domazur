@@ -138,8 +138,6 @@ function ObjectLength( object ) {
 		});	
 	};
 
-
-	
 	
 	Carousel.prototype.init = function() {
 	
@@ -158,20 +156,6 @@ function ObjectLength( object ) {
 		if (document.body.contains(thumbsGallery)) {
 			ctme.Carousel.gallery();
 		}
-
-		/*
-var action = function() {
-
-			var result = ctme.Helper.isInView(buy);
-		
-			if (result) {
-				ctme.Carousel.opinions();
-				window.removeEventListener('scroll', action);
-			}			
-		};
-
-		window.addEventListener('scroll', action);
-*/
 	};
 
 	ctme.Carousel = new Carousel();	

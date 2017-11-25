@@ -1,8 +1,17 @@
 body {
 	width: 100%;
 	background-color: $c-black;
+	
+	@media screen and ( max-width: $tablet_portrait + px ) {
+		padding-top: 100px;
+	}
+	
+	@media screen and ( max-width: $smartphone + px ) {
+		padding-top: 56px;
+	}
 }
 
 html {
+	height: 100%;
 	-webkit-text-size-adjust: 100%;
 }

@@ -1,20 +1,61 @@
 .c-top {
-	height: 200px;
+	@extend %rel;
+	height: 130px;
+	border-bottom: 1px solid $c-gray-3;
 	
 	@media screen and ( max-width: $tablet + px ) {
-		height: 155px;
+		height: 100px;
 	}
 	
-	&__toolbar {
-		@extend %abs; z-index: 10;
-		right: 0; top: 48px;
+	@media screen and ( max-width: $tablet_portrait + px ) {
+		position: fixed;
+		left: 0; top: 0;
+		z-index: 200;
+		width: 100%;
+		background-color: $c-black;
+	}
+	
+	@media screen and ( max-width: $smartphone + px ) {
+		height: 56px;
+	}
+	
+	&__navicons {
+		@extend %flex;
+		@extend %abs;
+		@extend %abs-y;
+		right: 0; 
+		color: $c-orange-1;
 		
-		@media screen and ( max-width: $laptop + px ) {
+		@media screen and ( min-width: $tablet_portrait + 1px ) {
+			display: none;
+		}
+		
+		@media screen and ( max-width: $tablet_portrait + px ) {
 			right: 40px;
 		}
 		
+		@media screen and ( max-width: $smartphone + px ) {
+			right: 20px;
+		}
+	}
+	
+	&__toolbar {
+		@extend %abs; 
+		@extend %anim;
+		z-index: 10;
+		right: 0; top: 48px;
+		
 		@media screen and ( max-width: $tablet + px ) {
 			top: 30px;
+		}
+		
+		@extend %mobile;
+		
+		@media screen and ( max-width: $tablet_portrait + px ) {
+			padding: {
+				top: 15px;
+				bottom: 20px;
+			}
 		}
 	}
 }
