@@ -48,8 +48,27 @@
 		float: left;
 	}
 	
+	&__preview {
+		@extend %rel;
+		display: block;
+
+		.o-btn {
+			@extend %abs; z-index: 15;
+			left: -5px;
+			
+			&--bottom {
+				bottom: -5px;
+			}
+			
+			&--top {
+				top: 10px;
+			}
+		}
+	}
+	
 	&__photo {
 		@extend %rel;
+		display: block;
 		
 		&:after {
 			@extend %abs-after; z-index: 10;
@@ -64,18 +83,7 @@
 			@extend %rel;
 		}
 		
-		.o-btn {
-			@extend %abs; z-index: 15;
-			left: -5px;
-			
-			&--bottom {
-				bottom: -5px;
-			}
-			
-			&--top {
-				top: 10px;
-			}
-		}
+		
 	}
 	
 	&__price {

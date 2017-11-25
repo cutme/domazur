@@ -5,13 +5,17 @@
 		buy = document.getElementById('buy'),
 		partners = document.getElementById('partners');
 
+
 	Carousel.prototype.buySwiper = function() {	
 		var mySwiper = new Swiper (buy, {
-			autoplay: false,
+			autoplay: true,
+			autoplay: {
+				delay: 2500,
+			},
 			slidesPerView: 4,
 			slidesPerGroup: 4,
-			speed: 400,
 			spaceBetween: 47,
+			speed: 400,
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true
@@ -71,21 +75,21 @@
 	
 	Carousel.prototype.partnersSwiper = function() {
 		
-function ObjectLength( object ) {
-    var length = 0;
-    for( var key in object ) {
-        if( object.hasOwnProperty(key) ) {
-            ++length;
-        }
-    }
-    return length;
-}
+		function ObjectLength( object ) {
+		    var length = 0;
+		    for( var key in object ) {
+		        if( object.hasOwnProperty(key) ) {
+		            ++length;
+		        }
+		    }
+		    return length;
+		}
 		
 		var bullets,
 			pagination = partners.getElementsByClassName('swiper-pagination')[0];
 		
 		var mySwiper = new Swiper (partners, {
-			autoplay: false,
+			autoplay: true,
 			slidesPerView: 5,
 			slidesPerGroup: 5,
 			speed: 400,
@@ -149,7 +153,6 @@ function ObjectLength( object ) {
 		}
 		
 		if (document.body.contains(partners)) {
-			//alert('s');
 			ctme.Carousel.partnersSwiper();
 		}
 		

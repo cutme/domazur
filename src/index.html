@@ -13,6 +13,8 @@
 			<div class="o-wrap o-wrap--base">
 				<nav class="c-nav c-nav--top">
 				@@include('./includes/nav.html', { "home": "is-active" })
+				
+				<div class="c-searchicon icon-loop"></div>
 				</nav>
 			</div>
 		</div>
@@ -126,9 +128,12 @@
 					</div>
 					
 					<div class="c-box__frame">
-						<div class="c-box__photo">
-							<a href="details.html" class="o-btn o-btn--gradient o-btn--top">Rent</a>
-							<img src="img/rent-01--landscape.jpg" alt="" width="640" height="395">
+						<div class="c-box__preview">
+							<a href="details.html" class="c-box__photo">
+								<img src="img/rent-01--landscape.jpg" alt="" width="640" height="395">
+							</a>
+							
+							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Rent</a>
 						</div>
 						
 						<div class="c-box__details">

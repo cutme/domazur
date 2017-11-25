@@ -1,0 +1,15 @@
+.c-searchicon {
+	@extend %abs;
+	@extend %abs-y;
+	right: 0;
+	font-size: rem(20);
+	color: $c-orange-1;
+	
+	@media screen and ( max-width: $laptop + px ) {
+		right: 40px;
+	}
+	
+	@media screen and ( max-width: $tablet_portrait + px ) {
+		display: none;
+	}
+}
