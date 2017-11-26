@@ -58,7 +58,6 @@
 					classie.remove(el, 'is-fixed');
 					classie.remove(el, 'is-animed');
 					status = true;
-					console.log('off');
 				}
 			}
 		};

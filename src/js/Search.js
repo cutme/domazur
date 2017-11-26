@@ -29,7 +29,7 @@
 		};
 		
 		more.addEventListener('click', action);
-		window.addEventListener('resize', restoreDefault);
+		//window.addEventListener('resize', restoreDefault);
 	};
 
 

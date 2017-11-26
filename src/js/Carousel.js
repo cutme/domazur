@@ -50,7 +50,19 @@
 					}, 100);
 				}
 			}
-		});	
+		});
+		
+		var onMouseOver = function() {
+			mySwiper.autoplay.stop();
+		};
+		
+		var onMouseOut = function() {
+			mySwiper.autoplay.start();
+		};
+		
+		buy.addEventListener('mouseover', onMouseOver);
+		buy.addEventListener('mouseout', onMouseOut);
+
 	};
 	
 	
