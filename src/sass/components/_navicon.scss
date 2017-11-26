@@ -20,11 +20,11 @@
 	}
 
 	&--menu-2 {
-		margin-right: 10px;
+		margin-right: 15px;
 		font-size: rem(30);
 		
 		@media screen and ( max-width: $smartphone + px ) {
-			margin-right: 0;
+			margin-right: 5px;
 		}
 		
 		&.icon-hamburger--mini {
