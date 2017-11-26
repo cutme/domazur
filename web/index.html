@@ -28,9 +28,6 @@
 			head.appendChild(link);
 	
 			link.onload = function () {
-				if (window.scrollY) {
-					window.scroll(0, 0);  // reset the scroll position to the top left of the document.
-				}
 				document.documentElement.removeAttribute('style');
 				document.body.className += " u-logo";
 			};
@@ -283,19 +280,19 @@
 		</div>
 
 
+		<header class="o-header anim anim--up">
+			<h2>Buy - our recommended</h2>
+
+			<div class="o-header__line">
+				<div class="o-header__lead">
+					<img src="img/icons/buy.png" alt="" width="52" height="33">
+				</div>
+			</div>
+		</header>
+
+
 		<div class="o-wrap o-wrap--content anim anim--up">
 			<div class="o-section">
-			
-				<header class="o-header">
-					<h2>Buy - our recommended</h2>
-		
-					<div class="o-header__line">
-						<div class="o-header__lead">
-							<img src="img/icons/buy.png" alt="" width="52" height="33">
-						</div>
-					</div>
-				</header>
-				
 				<div class="swiper-container" id="buy">
 					<div class="swiper-wrapper">
 				
@@ -708,50 +705,54 @@
 		</div>
 
 		
-		<div class="o-wrap o-wrap--content">
+		<header class="o-header anim anim--up">
+			<h2>Rent - our recommended</h2>
+			<div class="o-header__line">
+				<div class="o-header__lead">
+					<img src="img/icons/rent.png" alt="" width="37" height="39">
+				</div>
+			</div>
+		</header>
+		
+
+		<div class="o-wrap o-wrap--content anim anim--up">
 			<div class="o-section">
-			
-				<header class="o-header">
-					<h2>Rent - our recommended</h2>
-					<div class="o-header__line">
-						<div class="o-header__lead">
-							<img src="img/icons/rent.png" alt="" width="37" height="39">
-						</div>
-					</div>
-				</header>
-			
+
 				<div class="o-grid">
-				<div class="c-box">
-					<div class="c-box__header c-box__header--top">
-						<p class="c-box__title c-box__title--big">Requebrune Cap Martin</p>
-						<p class="c-box__title c-box__title--small">France - Martin</p>
-					</div>
-					
-					<div class="c-box__frame">
-						<div class="c-box__preview">
-							<a href="details.html" class="c-box__photo">
-								<img src="img/rent-01--landscape.jpg" alt="" width="640" height="395">
-							</a>
-							
-							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Rent</a>
+					<div class="c-box">
+						<div class="c-box__header c-box__header--top">
+							<p class="c-box__title c-box__title--big">Requebrune Cap Martin</p>
+							<p class="c-box__title c-box__title--small">France - Martin</p>
 						</div>
 						
-						<div class="c-box__details">
-							<div class="c-box__info">
-								<p class="c-box__price">Price on request</p>
-								<p class="o-meta o-meta--small">
-									<span>Ref:</span> <span>DA 39</span>
-								</p>
+						<div class="c-box__frame">
+							<div class="c-box__preview">
+								<a href="details.html" class="c-box__photo">
+									<picture>
+										<source srcset="img/rent-01--landscape.jpg" media="(min-width: 1440px)">
+										<img srcset="img/rent-01.jpg" alt="">
+									</picture>
+								</a>
+								
+								<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Rent</a>
 							</div>
 							
-							<div class="c-box__btn">
-								<a href="details.html" class="o-btn o-btn--border">Details</a>
+							<div class="c-box__details">
+								<div class="c-box__info">
+									<p class="c-box__price">Price on request</p>
+									<p class="o-meta o-meta--small">
+										<span>Ref:</span> <span>DA 39</span>
+									</p>
+								</div>
+								
+								<div class="c-box__btn">
+									<a href="details.html" class="o-btn o-btn--border">Details</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				
-				
+					
+					
 				<div class="c-box">
 					<div class="c-box__header c-box__header--top">
 						<p class="c-box__title c-box__title--big">Mont Boron</p>
@@ -782,7 +783,7 @@
 					</div>
 				</div>
 
-								<div class="c-box">
+									<div class="c-box">
 					<div class="c-box__header c-box__header--top">
 						<p class="c-box__title c-box__title--big">Requebrune Cap Martin</p>
 						<p class="c-box__title c-box__title--small">France - Martin</p>
@@ -942,17 +943,18 @@
 			</ul>
 		</div>
 		
-				<div class="o-wrap o-wrap--base anim anim--up">
+				<header class="o-header anim anim--up">
+			<h2>Partnerships</h2>
+			<div class="o-header__line">
+				<div class="o-header__lead">
+					<img src="img/icons/partners.png" alt="" width="59" height="40">
+				</div>
+			</div>
+		</header>
+
+		<div class="o-wrap o-wrap--base anim anim--up">
 			<div class="o-section">
-				<header class="o-header">
-					<h2>Partnerships</h2>
-					<div class="o-header__line">
-						<div class="o-header__lead">
-							<img src="img/icons/partners.png" alt="" width="59" height="40">
-						</div>
-					</div>
-				</header>
-	
+
 				<div class="c-partners">
 				
 					<div class="swiper-container" id="partners">
@@ -997,16 +999,17 @@
 		</div>
 		
 		
+		<header class="o-header anim anim--up">
+			<h2>Rent a Car, Yacht or Jet charter</h2>
+
+			<div class="o-header__line o-header__line--text">
+				<div class="o-header__lead o-header__lead--text">We will help You by hire transport</div>
+			</div>
+		</header>
+
+
 		<div class="o-wrap o-wrap--content anim anim--up">
 			<div class="o-section o-section--boxes">
-			
-				<header class="o-header">
-					<h2>Rent a Car, Yacht or Jet charter</h2>
-		
-					<div class="o-header__line">
-						<div class="o-header__lead o-header__lead--text">We will help You by hire transport</div>
-					</div>
-				</header>
 
 				<div class="o-grid o-grid--medium">
 					<div class="c-box">

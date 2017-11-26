@@ -26,9 +26,6 @@
 			head.appendChild(link);
 	
 			link.onload = function () {
-				if (window.scrollY) {
-					window.scroll(0, 0);  // reset the scroll position to the top left of the document.
-				}
 				document.documentElement.removeAttribute('style');
 				document.body.className += " u-logo";
 			};

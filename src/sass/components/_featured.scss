@@ -10,12 +10,16 @@
 		}
 		
 		@media screen and ( max-width: $tablet_portrait + px ) {
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 		}
 		
 		&--description {
 			@media screen and ( min-width: $tablet_portrait + 1px ) {
 				max-width: 740px;
+			}
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				padding: 20px;
 			}
 		}
 		
@@ -57,7 +61,10 @@
 		}
 		
 		&:nth-child(odd) {
-			border-top: 1px solid $c-gray-3;
+		
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				border-top: 1px solid $c-gray-3;
+			}
 
 			.c-featured__item {
 				
@@ -97,8 +104,11 @@
 		
 		&:nth-child(even) {
 			flex-direction: row-reverse;
-			border-bottom: 1px solid $c-gray-3;
 			text-align: right;
+			
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				border-bottom: 1px solid $c-gray-3;
+			}
 			
 			.c-featured__item {
 

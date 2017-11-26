@@ -62,10 +62,20 @@
 				}
 			}
 		};
+		
+		
+		
+		//setTimeout(function() {
+		
+			window.scroll(0, 0);  // reset the scroll position to the top left of the document.
+
+			fixElInit();
+			removeFixElInit();
+			
+		//}, 5000);
 
 		window.addEventListener('scroll', fixElInit);
 		window.addEventListener('resize', removeFixElInit);
-		
 	};
 
 	Nav.prototype.triggers = function() {

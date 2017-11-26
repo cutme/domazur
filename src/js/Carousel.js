@@ -26,16 +26,19 @@
 				// when window width is <= 640px
 				640: {
 					slidesPerView: 1,
+					slidesPerGroup: 1,
 					spaceBetween: 0
 				},
 				// when window width is <= 1023px
 				1023: {
 					slidesPerView: 2,
+					slidesPerGroup: 2,
 					spaceBetween: 20
 				},
 				// when window width is <= 1439px
 				1439: {
 					slidesPerView: 3,
+					slidesPerGroup: 3,
 					spaceBetween: 20
 				}
 			},

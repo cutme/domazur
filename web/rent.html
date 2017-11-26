@@ -28,9 +28,6 @@
 			head.appendChild(link);
 	
 			link.onload = function () {
-				if (window.scrollY) {
-					window.scroll(0, 0);  // reset the scroll position to the top left of the document.
-				}
 				document.documentElement.removeAttribute('style');
 				document.body.className += " u-logo";
 			};
@@ -796,17 +793,18 @@
 			</ul>
 		</div>
 
-				<div class="o-wrap o-wrap--base anim anim--up">
+				<header class="o-header anim anim--up">
+			<h2>Partnerships</h2>
+			<div class="o-header__line">
+				<div class="o-header__lead">
+					<img src="img/icons/partners.png" alt="" width="59" height="40">
+				</div>
+			</div>
+		</header>
+
+		<div class="o-wrap o-wrap--base anim anim--up">
 			<div class="o-section">
-				<header class="o-header">
-					<h2>Partnerships</h2>
-					<div class="o-header__line">
-						<div class="o-header__lead">
-							<img src="img/icons/partners.png" alt="" width="59" height="40">
-						</div>
-					</div>
-				</header>
-	
+
 				<div class="c-partners">
 				
 					<div class="swiper-container" id="partners">
@@ -851,16 +849,17 @@
 		</div>
 
 		
+		<header class="o-header anim anim--up">
+			<h2>Rent a Car, Yacht or Jet charter</h2>
+
+			<div class="o-header__line o-header__line--text">
+				<div class="o-header__lead o-header__lead--text">We will help You by hire transport</div>
+			</div>
+		</header>
+
+
 		<div class="o-wrap o-wrap--content anim anim--up">
 			<div class="o-section o-section--boxes">
-			
-				<header class="o-header">
-					<h2>Rent a Car, Yacht or Jet charter</h2>
-		
-					<div class="o-header__line">
-						<div class="o-header__lead o-header__lead--text">We will help You by hire transport</div>
-					</div>
-				</header>
 
 				<div class="o-grid o-grid--medium">
 					<div class="c-box">

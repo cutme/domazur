@@ -1,5 +1,11 @@
 .c-breadcrumbs {
 	margin-bottom: 90px;
+	
+	@media screen and ( max-width: $tablet + px ) {
+		margin-bottom: 70px;
+		text-align: center;
+	}
+	
 
 	a {
 		color: $c-gray-1;

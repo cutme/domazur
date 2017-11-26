@@ -1,11 +1,14 @@
 .c-leadphoto {
 	@extend %rel;
+	//min-height: 345px;
 
 	picture {
 		@extend %rel;
+		min-height: 345px;
 		
 		img {
 			margin: 0 auto;
+			
 			
 			@media screen and ( min-width: $desktop + 1px ) {
 				width: 100%;
@@ -20,6 +23,10 @@
 	
 	&--subsite {
 		margin-bottom: 40px;
+		
+		img {
+			min-height: 345px;
+		}
 	}
 	/*
 background: {

@@ -3,6 +3,11 @@
 	margin-bottom: 50px;
 	//margin-right: 47px;
 	
+	@media screen and ( max-width: $smartphone + px ) {
+		margin-bottom: 30px;
+	}
+	
+	
 	&:hover {
 		.c-box__photo {
 			&:after {
@@ -32,8 +37,11 @@
 	&__header {
 
 		&--bottom {
-			padding-top: 20px;
-			
+			padding: {
+				top: 20px;
+				left: 10px;
+			}
+
 			.c-box__title {
 				margin-bottom: 20px;
 			}
@@ -41,6 +49,7 @@
 		
 		&--top {
 			margin-bottom: 20px;
+			padding-left: 10px;
 		}
 	}
 	

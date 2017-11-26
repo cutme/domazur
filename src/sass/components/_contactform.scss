@@ -5,13 +5,20 @@
 	color: black;
 	
 	&__content {
-		width: 945px;
-		margin: 0 auto;
+		//width: 945px;
+		//margin: 0 auto;
+		
+		
 	}
 	
 	&__title,
 	&__subtitle {
 		@extend %font-serif;
+		
+		@media screen and ( max-width: $tablet_portrait + px ) {
+			text-align: center;
+		}
+		
 	}
 
 	

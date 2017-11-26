@@ -4,6 +4,10 @@
 
 		&--submit {
 			padding-top: 35px;
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				text-align: center;
+			}
 		}
 	}
 	
@@ -23,7 +27,7 @@
 		display: block;
 		margin-bottom: 10px;
 	}
-	
+
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 		color: $c-gray-6;
 	}

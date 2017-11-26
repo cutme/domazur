@@ -39,7 +39,11 @@
 		}
 		
 		@media screen and ( max-width: $smartphone + px ) {
-			max-width: 300px;
+			max-width: 100%;
+			padding: {
+				left: 20px;
+				right: 20px;
+			}
 		}
 	}
 	

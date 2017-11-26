@@ -10,14 +10,27 @@
 	}
 	
 	header {
-		padding: 0 160px;
+		@media screen and ( min-width: $laptop + px ) {
+			padding: 0 160px;
+			margin-bottom: 60px;
+		}
 	}
 
 	img {
 		border: 1px solid $c-gray-3;
-		margin-top: 120px;
-		margin-bottom: 140px;
+		
 		padding: 10px;
+		
+		@media screen and ( min-width: $laptop + px ) {
+			margin: {
+				top: 120px;
+				bottom: 140px;
+			}
+		}
+		
+		@media screen and ( max-width: $laptop + px ) {
+			margin: 40px auto;
+		}
 	}
 	
 	h2, h3, h4 {
@@ -26,6 +39,7 @@
 	
 	h2 {
 		@extend %font-serif;
+		line-height: 1.2;
 		font-size: rem(30);
 	}
 	

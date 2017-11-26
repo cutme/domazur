@@ -41,8 +41,15 @@
 }
 
 .u-cols {
-	column-count: 2;
-	column-gap: 40px;
+	@media screen and ( min-width: $tablet + 1px ) {
+		column-count: 2;
+		column-gap: 40px;
+	}
+
+	@media screen and ( min-width: $smartphone + 1px ) and ( max-width: $tablet + px ) {
+		text-align: center;
+	}
+
 }
 
 
@@ -51,18 +58,25 @@
 }
 
 .u-pull-left {
-	float: left;
-	margin: {
-		right: 120px;
-		left: 120px;
+	
+	@media screen and ( min-width: $laptop + px ) {
+		float: left;
+		margin: {
+			right: 120px;
+			left: 120px;
+		}
 	}
+	
 }
 
 .u-pull-right {
-	float: right;
-	margin: {
-		right: 120px;
-		left: 120px;
+
+	@media screen and ( min-width: $laptop + px ) {
+		float: right;
+		margin: {
+			right: 120px;
+			left: 120px;
+		}
 	}
 }
 
