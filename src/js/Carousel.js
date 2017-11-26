@@ -21,7 +21,6 @@
 				clickable: true
 			},
 			
-			
 			breakpoints: {
 				// when window width is <= 640px
 				640: {
@@ -69,7 +68,7 @@
 	Carousel.prototype.gallery = function() {
 
 		var galleryTop = new Swiper('.gallery-top', {
-			spaceBetween: 10,
+			slidesPerView: 1,
 			navigation: {
 				nextEl: '.swiper-button--next',
 				prevEl: '.swiper-button--prev',
@@ -81,6 +80,12 @@
 			slidesPerView: 'auto',
 			touchRatio: 0.2,
 			slideToClickedSlide: true,
+			breakpoints: {
+				// when window width is <= 640px
+				640: {
+					slidesPerView: 3,
+				}
+			}
 		});
 
 		galleryTop.controller.control = galleryThumbs;

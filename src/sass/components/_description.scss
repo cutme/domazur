@@ -1,4 +1,18 @@
 .c-description {
+
+	&__desktop {
+		@media screen and ( max-width: $laptop + px ) {
+			display: none;
+		}
+	}
+
+	&__lead {
+		@extend %font-serif;
+		margin-bottom: 5px;
+		line-height: 1.2;
+		font-size: rem(30);
+	}
+
 	&__price {
 		font-size: rem(18);
 	}

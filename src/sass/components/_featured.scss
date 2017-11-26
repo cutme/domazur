@@ -28,6 +28,11 @@
 			overflow: hidden;
 			
 			img {
+				@extend %anim;
+				transition-duration: 3s;
+				transform: translate3d(0,0,0);
+				will-change: transform;
+
 				@media screen and ( min-width: $tablet_portrait + 1px ) {
 					position: absolute;
 					top: 0; right: 0;
@@ -40,14 +45,14 @@
 			@media screen and ( max-width: $tablet_portrait + px ) {
 				margin-bottom: 40px;
 			}
+			
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
 		}
-	}
-	
-	&__lead {
-		@extend %font-serif;
-		line-height: 1.2;
-		font-size: rem(30);
-	}	
+	}		
 	
 	&__row {
 	

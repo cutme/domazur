@@ -7,11 +7,13 @@
 	}
 
 	&__col {
-		float: left;
-		width: 50%;
-		
-		&--description {
-			width: 675px;
+		@media screen and ( min-width: $laptop + px ) {
+			float: left;
+			width: 50%;
+			
+			&--description {
+				width: 675px;
+			}
 		}
 	}
 	
@@ -22,7 +24,23 @@
 	}
 	
 	.c-description {
-		padding-left: 80px;
+
+		@media screen and ( min-width: $laptop + px ) {
+			padding-left: 80px;
+		}
+
+		&--mobile {
+			margin-bottom: 40px;
+			text-align: center;
+			
+			@media screen and ( min-width: $laptop + px ) {
+				display: none;
+			}
+			
+			.c-description__row--cta {
+			    justify-content: center;
+			}
+		}
 	}
 	
 	.gallery-thumbs {
@@ -50,6 +68,12 @@
 		text-align: center;
 		line-height: 55px;
 		font-size: rem(26);
+			
+		&:after,
+		&:before {
+			transition: none;
+			transform: none;
+		}
 		
 		&:active {
 			opacity: .9

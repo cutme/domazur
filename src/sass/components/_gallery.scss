@@ -1,3 +1,15 @@
 .c-gallery {
-//	@extend %rel;
+	@media screen and ( max-width: $laptop + px ) {
+		margin-bottom: 70px;
+	}
+	
+	@media screen and ( max-width: $smartphone + px ) {
+		width: calc(100% + 40px);
+		position: relative;
+		margin: {
+			left: -20px;
+			right: -20px;
+		}
+	}
+	
 }
