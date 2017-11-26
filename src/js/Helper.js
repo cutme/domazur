@@ -116,6 +116,32 @@
 			initFollow();
 			window.addEventListener('resize', initFollow);
 		}
+		
+		/*
+function searchForm() {
+			var status = false,
+				el = document.getElementById('searchform'),
+				src = document.getElementsById('searchformContainer'),
+				dest = document.getElementsByClassName('c-search__item--submit')[0];
+
+			var init = function() {
+				var ww = window.innerWidth;
+
+				if (ww <= 1410 && status !== true) {
+					detach( el, dest );
+					status = true;
+				}
+				
+				if (ww > 1410 && status !== false) {
+					detach( el, src );
+					status = false;
+				}
+			};
+			
+			init();
+			window.addEventListener('resize', init);
+		}
+*/
 
 		function searchSubmit() {
 			var status = false,
@@ -140,6 +166,7 @@
 			init();
 			window.addEventListener('resize', init);
 		}
+		
 
 		follow();
 		searchSubmit();	

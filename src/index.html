@@ -14,7 +14,16 @@
 				<nav class="c-nav c-nav--top">
 				@@include('./includes/nav.html', { "home": "is-active" })
 				
-				<div class="c-searchicon icon-loop"></div>
+				
+				<div class="c-searchform" id="searchformContainer">
+					<a href="#" class="c-searchform__icon icon-loop" id="searchlens"></a>
+					
+					<div class="c-searchform__field" id="searchform">
+						<input type="text" placeholder="Search" class="c-searchform__input">
+						<button type="submit" class="c-searchform__submit icon-loop"></button>
+					</div>
+				</div>
+				
 				</nav>
 			</div>
 		</div>

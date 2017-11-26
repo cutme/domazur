@@ -33,6 +33,25 @@
 	};
 
 
+	Search.prototype.searchform = function() {
+	
+		var lens = document.getElementById('searchlens'),
+			form = document.getElementById('searchform');
+	
+		var action = function(e) {
+
+			classie.toggle(lens, 'icon-loop');
+			classie.toggle(lens, 'icon-close');
+
+			classie.toggle(form, 'is-visible');
+			
+			e.returnValue = false;
+		};		
+		
+		lens.addEventListener('click', action);
+	};
+
+
 	Search.prototype.init = function() {
 	
 		var search = document.getElementById('search');
@@ -40,6 +59,8 @@
 		if (document.body.contains(search)) {
 			ctme.Search.more();
 		}
+		
+		ctme.Search.searchform();
 	};
 
 	ctme.Search = new Search();	

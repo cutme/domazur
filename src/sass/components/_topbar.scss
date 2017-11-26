@@ -2,6 +2,7 @@
 	@extend %rel;
 	@extend %anim;
 	@extend %mobile;
+	z-index: 10;
 	background-color: $c-black;
 	will-change: transform;
 	

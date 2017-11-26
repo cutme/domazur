@@ -25,14 +25,14 @@
 	}
 	
 	&--top {
-		
+
 		@media screen and ( min-width: $tablet_portrait + 1px ) {
 			display: flex;
 			align-items: center;
 			height: 100%;
 		}
 		
-		@media screen and ( max-width: $laptop + px ) {
+		@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $laptop + px ) {
 			left: 40px;
 			width: calc(100% - 80px);
 		}
@@ -44,6 +44,10 @@
 		ul {
 			@media screen and ( min-width: $tablet_portrait + 1px ) {
 				display: flex;
+			}
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				margin-bottom: 20px;
 			}
 		}
 		
