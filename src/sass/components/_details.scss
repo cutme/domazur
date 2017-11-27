@@ -42,52 +42,6 @@
 			}
 		}
 	}
-	
-	.gallery-thumbs {
-		.swiper-slide {
-			opacity: 1;
-			cursor: pointer;
-		}
-	
-		.swiper-slide-active {
-			background-color: $c-orange-1;
-
-			img {
-				opacity: .3;
-			}
-		}
-	}
-
-	.swiper-container {
-		margin-bottom: 10px;
-	}
-	
-	.swiper-button {
-		@extend %gradient;
-		width: 55px; height: 55px;
-		text-align: center;
-		line-height: 55px;
-		font-size: rem(26);
-			
-		&:after,
-		&:before {
-			transition: none;
-			transform: none;
-		}
-		
-		&:active {
-			opacity: .9
-		}
-		
-		&.swiper-button-disabled {
-			background: rgba(white, .1);
-		}
-	}
-	
-	.swiper-arrows {
-		@extend %flex;
-		@extend %flex-spacebetween;
-	}
 }
 
 

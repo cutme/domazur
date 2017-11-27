@@ -57,6 +57,32 @@
 	text-align: center;
 }
 
+.u-gradient {
+	@extend %anim;
+	@extend %gradient;
+	@extend %rel;
+	
+	&:after {
+		@extend %anim;
+		@extend %gradient;
+		@extend %abs-after; z-index: -1;
+		left: 0; top: 0;
+		width: 100%; height: 100%;
+		transform: rotate(180deg);
+		opacity: 0;
+	}
+	
+	&:hover {
+		&:not(.swiper-button-disabled) {
+			.desktop & {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
 .u-pull-left {
 	
 	@media screen and ( min-width: $laptop + px ) {

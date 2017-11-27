@@ -8,6 +8,10 @@
 		padding: 0 20px;
 	}
 	
+	@media screen and ( max-width: $smartphone + px ) {
+		margin-bottom: 30px;
+	}
+	
 	h1, h2 {
 		margin-bottom: 2rem;
 		line-height: 1.2;
@@ -71,20 +75,8 @@
 		&--text {
 			@media screen and ( max-width: $tablet_portrait + px ) {
 				padding: 0 grid(110, $tablet_portrait);
-				
-				&:before {
-					width: grid(110, $tablet_portrait);
-				}
-			}
-			
-			@media screen and ( max-width: $smartphone_portrait + px ) {
-				//display: block;
-				//width: 100%;
-				//padding: 0;
-				//background: red;
 			}
 		}
-		
 	}
 	
 	&__lead {

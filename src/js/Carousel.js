@@ -15,6 +15,7 @@
 			slidesPerView: 4,
 			slidesPerGroup: 4,
 			spaceBetween: 47,
+			loop: true,
 			speed: 400,
 			pagination: {
 				el: '.swiper-pagination',
@@ -122,6 +123,7 @@
 		
 		var mySwiper = new Swiper (partners, {
 			autoplay: true,
+			loop: true,
 			slidesPerView: 5,
 			slidesPerGroup: 5,
 			speed: 400,

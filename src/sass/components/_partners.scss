@@ -1,4 +1,8 @@
 .c-partners {
+
+	@media screen and ( max-width: $smartphone + px ) {
+		padding-top: 25px;
+	}
 	
 	.swiper
 
