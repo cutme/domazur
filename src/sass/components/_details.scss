@@ -78,6 +78,10 @@
 		&:active {
 			opacity: .9
 		}
+		
+		&.swiper-button-disabled {
+			background: rgba(white, .1);
+		}
 	}
 	
 	.swiper-arrows {

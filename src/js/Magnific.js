@@ -5,6 +5,7 @@
 	
 		$('.mfp-image').magnificPopup({
 			closeBtnInside: false,
+			fixedContentPos: true,
 			mainClass: 'my-mfp-zoom-in',
 			gallery: {
 				arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow icon-arrow--%dir%"></button>',

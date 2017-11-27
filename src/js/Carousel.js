@@ -76,7 +76,7 @@
 		
 		var galleryThumbs = new Swiper('.gallery-thumbs', {
 			centeredSlides: true,
-			slidesPerView: 5,
+			slidesPerView: 'auto',
 			touchRatio: 0.2,
 			slideToClickedSlide: true,
 			breakpoints: {
