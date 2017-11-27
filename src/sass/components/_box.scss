@@ -78,6 +78,8 @@
 	&__photo {
 		@extend %rel;
 		display: block;
+		padding-bottom: 74.13%;
+		height: 0;
 		
 		&:after {
 			@extend %abs-after; z-index: 10;
@@ -90,9 +92,14 @@
 		
 		img {
 			@extend %rel;
+			z-index: 15;
+		}		
+	}
+	
+	&--medium {
+		.c-box__photo {
+			padding-bottom: 73.89%;
 		}
-		
-		
 	}
 	
 	&__price {

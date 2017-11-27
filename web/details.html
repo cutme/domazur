@@ -31,7 +31,7 @@
 				document.documentElement.removeAttribute('style');
 				document.body.className += " u-logo";
 			};
-		}
+		}, bLazy;
 	
 		Pace.on('start', function() {
 			loadMyCSS();
@@ -51,6 +51,8 @@
 				ctme.Nav.init();
 				ctme.Search.init();
 				ctme.loadMore.init();
+				
+				bLazy = new Blazy();
 			}, 100);
 			
 //			
@@ -580,7 +582,11 @@ Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of 
 					<div class="c-box__frame">
 						<div class="c-box__preview">
 							<a href="details.html" class="c-box__photo">
-								<img src="img/buy-01.jpg" alt="" width="290" height="215">
+								<img 
+									src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+									data-src="img/buy-01.jpg" alt="" width="290" height="215"
+									class="b-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 							</a>
 							
 							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
@@ -613,7 +619,11 @@ Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of 
 					<div class="c-box__frame">
 						<div class="c-box__preview">
 							<a href="details.html" class="c-box__photo">
-								<img src="img/buy-02.jpg" alt="" width="290" height="215">
+								<img 
+									src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+									data-src="img/buy-02.jpg" alt="" width="290" height="215"
+									class="b-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 							</a>
 							
 							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
@@ -646,7 +656,11 @@ Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of 
 					<div class="c-box__frame">
 						<div class="c-box__preview">
 							<a href="details.html" class="c-box__photo">
-								<img src="img/buy-03.jpg" alt="" width="290" height="215">
+								<img 
+									src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+									data-src="img/buy-03.jpg" alt="" width="290" height="215"
+									class="b-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 							</a>
 							
 							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
@@ -679,7 +693,11 @@ Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of 
 					<div class="c-box__frame">
 						<div class="c-box__preview">
 							<a href="details.html" class="c-box__photo">
-								<img src="img/buy-04.jpg" alt="" width="290" height="215">
+								<img 
+									src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+									data-src="img/buy-04.jpg" alt="" width="290" height="215"
+									class="b-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 							</a>
 							
 							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
@@ -713,7 +731,11 @@ Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of 
 					<div class="c-box__frame">
 						<div class="c-box__preview">
 							<a href="details.html" class="c-box__photo">
-								<img src="img/buy-01.jpg" alt="" width="290" height="215">
+								<img 
+									src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+									data-src="img/buy-01.jpg" alt="" width="290" height="215"
+									class="b-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 							</a>
 							
 							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
@@ -746,7 +768,11 @@ Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of 
 					<div class="c-box__frame">
 						<div class="c-box__preview">
 							<a href="details.html" class="c-box__photo">
-								<img src="img/buy-02.jpg" alt="" width="290" height="215">
+								<img 
+									src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+									data-src="img/buy-02.jpg" alt="" width="290" height="215"
+									class="b-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 							</a>
 							
 							<a href="details.html" class="o-btn o-btn--gradient o-btn--bottom">Buy</a>
@@ -974,10 +1000,14 @@ Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of 
 			<div class="o-section o-section--boxes">
 
 				<div class="o-grid o-grid--medium">
-					<div class="c-box">
+					<div class="c-box c-box--medium">
 						<div class="c-box__frame">
-							<a href="contact.html" class="c-box__photo">							
-								<img src="img/rent2-01.jpg" alt="" width="406" height="300">
+							<a href="contact.html" class="c-box__photo">	
+								<img 
+									src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+									data-src="img/rent2-01.jpg" alt="" width="406" height="300" 
+									class="b-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 							</a>						
 						</div>
 						
@@ -987,10 +1017,14 @@ Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of 
 						</div>
 					</div>
 					
-					<div class="c-box">
+					<div class="c-box c-box--medium">
 						<div class="c-box__frame">
 							<a href="contact.html" class="c-box__photo">							
-								<img src="img/rent2-02.jpg" alt="" width="406" height="300">
+								<img 
+									src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+									data-src="img/rent2-02.jpg" alt="" width="406" height="300" 
+									class="b-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 							</a>						
 						</div>
 						
@@ -1000,10 +1034,14 @@ Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of 
 						</div>
 					</div>
 					
-					<div class="c-box">
+					<div class="c-box c-box--medium">
 						<div class="c-box__frame">
 							<a href="contact.html" class="c-box__photo">							
-								<img src="img/rent2-03.jpg" alt="" width="406" height="300">
+								<img 
+									src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+									data-src="img/rent2-03.jpg" alt="" width="406" height="300" 
+									class="b-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 							</a>						
 						</div>
 						

@@ -3,7 +3,6 @@
 
 	var Helper = function() {
         return {
-        	blazy: blazy,
         	goToTarget: goToTarget,
         	isInView: isInView,
         	isMobile: isMobile,
@@ -19,24 +18,6 @@
 		if ( el.getBoundingClientRect().top + (window.pageYOffset || window.scrollY) < bottomOfWindow ) {
 			return true;
 		}
-	};
-
-	var blazy = function() {
-		var bLazy = new Blazy({
-			success: function(element){
-			    setTimeout(function(){					
-					var parent = element.parentNode,
-						grandpa = element.parentNode.parentNode;
-
-					//classie.remove( parent, 'is-loading');
-					//classie.add( parent, 'is-loaded');
-
-					parent.className += ' is-loaded';
-					grandpa.className += ' is-loaded';
-					//parent.parentNode.className = parent.parentNode.className.replace(/\bis-loading\b/,'');
-			    }, 200);
-	        }
-	   });
 	};
 	
 	var goToTarget = function() {
@@ -185,7 +166,6 @@
 	};
 	
 	ctme.Helper = new Helper();
-	
 	
 	isMobile();
 	rwd();

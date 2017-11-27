@@ -27,7 +27,7 @@
 					} else {
 						var items = $.parseHTML(msg);
 						$(grid).append(items);
-						//bLazy.revalidate();												
+						bLazy.revalidate();												
 					}
 				},
 				

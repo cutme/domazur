@@ -29,7 +29,7 @@
 				document.documentElement.removeAttribute('style');
 				document.body.className += " u-logo";
 			};
-		}
+		}, bLazy;
 	
 		Pace.on('start', function() {
 			loadMyCSS();
@@ -49,6 +49,8 @@
 				ctme.Nav.init();
 				ctme.Search.init();
 				ctme.loadMore.init();
+				
+				bLazy = new Blazy();
 			}, 100);
 			
 //			

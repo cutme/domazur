@@ -20,6 +20,8 @@
 				el: '.swiper-pagination',
 				clickable: true
 			},
+			lazy: true,
+			watchSlidesVisibility: true,
 			
 			breakpoints: {
 				// when window width is <= 640px
