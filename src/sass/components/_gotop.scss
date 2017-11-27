@@ -1,32 +1,45 @@
 .c-gotop {
 	position: fixed;
+	z-index: 200;
+	left: calc(100% - 100px);
 	bottom: 100px;
-	width: 67px;
-	height: 67px;
-	background-color: white;
-	font-size: em(36);
-	//color: $c-red--brighter;
+	width: 60px;
+	height: 60px;	
+	background-color: rgba(white, .1);
+	font-size: rem(26);
+	color: white;
 	display: none;
+	cursor: pointer;
+	transform: scaleY(-1);
 	
 	&.is-visible {
 		display: block;
 		animation: fadeIn 400ms ease-out;
 	}
 	
-	@media screen and ( min-width: $base + px ) {
-		left: calc(100% - 100px);
-	}
-	
-	@media screen and ( max-width: 1400px ) {
+	@media screen and ( max-width: $tablet + px) {
 		display: none !important;
 	}
 
 	&:before {
+		@extend %rel;
 		display: block;
-		transform: rotate(-90deg);
+		transform: rotate(-90deg) translateX(2px);
+		
+	}
+	
+	&:after {
+		@extend %anim;
+		@extend %abs-after;
+		@extend %gradient;
+		left: 0; top: 0; z-index: 1;
+		width: 100%; height: 100%;
+		opacity: 0;
 	}
 	
 	&:hover {
-		transform: translateY(-5px);
+		&:after {
+			opacity: 1;
+		}
 	}
 }

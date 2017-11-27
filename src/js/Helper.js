@@ -20,35 +20,34 @@
 		}
 	};
 	
-	var goToTarget = function() {
-		
-		var btn = document.getElementsByClassName('js-goto'),
-		
-			action = function action(e) {
+	var goToTarget = function(target, offset) {
 
-				var that = e.currentTarget,
-					src = that.getAttribute('href'),
-					target = 0,
-					window_pos = window.pageYOffset || window.scrollY;
-					
-				if (src.length > 1) {	
-					var obj = document.getElementById( src.slice(1, src.length) );
-					
-					target = window_pos + obj.getBoundingClientRect().top;
-				}
-
-				TweenLite.to(window, 0.5, {
-					scrollTo: {
-						y: target
-					}
-				});
+		var $viewport = $('body, html'), 
+			page_offset = $(document).scrollTop(),
+			base_speed  = 500,
+			o;
 			
-				e.returnValue = false;	
-			};
+		if (target === undefined) {
+			o = 0;
+		} else {
+			o = $(target).offset().top;
+		}
+			
+			
+		var offset_diff = Math.abs(o - page_offset),
+			speed       = (offset_diff * base_speed) / 1000;
+
+
+		if (offset === undefined) offset = 0;
 		
-		for (var i = 0; i < btn.length; i++) {
-			btn[i].addEventListener('click', action);
-		}		
+		$(document).scrollTop(page_offset);
+
+		$viewport.animate({
+			scrollTop: o + offset + 2
+		}, {
+			easing: 'easeOutCubic',
+			duration: speed
+		});	
 	};
 	
 	var isMobile = function() {
@@ -142,13 +141,27 @@
 	};
 	
 	var showOnScroll = function() {
-		var el = document.getElementsByClassName('anim');
+		var el = document.getElementsByClassName('anim'),
+			arrow = document.querySelectorAll('.js-gotop');
 		
 		for (var i = 0; i < el.length; i++) {
 			if (isInView(el[i])) {
 				classie.add( el[i], 'anim--loaded' );
 			}
 		}
+		
+		function goTopArrow() {
+    	
+    		if ( (window.pageYOffset || window.scrollY) + window.innerHeight > 1600 ) {
+				if ( classie.has( arrow[0], 'is-visible') === false ) {
+					classie.add(arrow[0], 'is-visible');
+				}
+			} else {
+				if ( classie.has( arrow[0], 'is-visible') === true ) {
+					classie.remove(arrow[0], 'is-visible');
+				}
+			}
+    	}
 		
 		function init() {			
 			for (var i = 0; i < el.length; i++) {
@@ -161,16 +174,31 @@
 					}
 				}
 			}
+			
+			goTopArrow();
 		}
+
 		window.addEventListener('scroll', init);
 	};
 	
+
+	
 	ctme.Helper = new Helper();
+
+
 	
 	isMobile();
 	rwd();
 
 	
+	$(document).ready(function() {
+		$('.js-goto').on('click', function(e) {
+			e.preventDefault();
+			var target = $(this).attr('href');
+
+			goToTarget(target);
+		});
+	});
 
 
 }(window.ctme = window.ctme || {}));
