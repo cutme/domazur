@@ -82,7 +82,7 @@
 		height: 0;
 		
 		&:after {
-			@extend %abs-after; z-index: 10;
+			@extend %abs-after; z-index: 15;
 			@extend %anim;
 			left: 0; top: 0;
 			width: 100%;
