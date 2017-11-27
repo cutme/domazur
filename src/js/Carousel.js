@@ -76,7 +76,7 @@
 		
 		var galleryThumbs = new Swiper('.gallery-thumbs', {
 			centeredSlides: true,
-			slidesPerView: 'auto',
+			slidesPerView: 5,
 			touchRatio: 0.2,
 			slideToClickedSlide: true,
 			breakpoints: {
@@ -117,17 +117,25 @@
 				clickable: true
 			},			
 			breakpoints: {
+				// when window width is <= 375px
+				375: {
+					slidesPerView: 1,
+					slidesPerGroup: 1
+				},
 				// when window width is <= 640px
 				640: {
-					slidesPerView: 2
+					slidesPerView: 2,
+					slidesPerGroup: 2
 				},
 				// when window width is <= 1023px
 				767: {
-					slidesPerView: 3
+					slidesPerView: 3,
+					slidesPerGroup: 3
 				},
 				// when window width is <= 1023px
 				1023: {
-					slidesPerView: 4
+					slidesPerView: 4,
+					slidesPerGroup: 4
 				}
 			},
 

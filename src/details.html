@@ -2,17 +2,9 @@
 <html lang="en-US">
 @@include('./includes/head.html')
 <style>
-    .swiper-slide {
-      background-size: cover;
-      background-position: center;
-    }
     
-    .gallery-thumbs .swiper-slide {
-      width: 25%;
-      height: 100%;
-      opacity: 0.4;
-    }
-
+    
+   
   </style>
 <body class="no-overflow">
 
@@ -72,19 +64,19 @@
 						
 							<div class="swiper-container gallery-top">
 								<div class="swiper-wrapper">
-									<a href="img/gallery-01.jpg" class="swiper-slide mfp-image">
+									<a href="img/gallery-big.jpg" class="swiper-slide mfp-image">
 										<img src="img/gallery-01.jpg" alt="">
 									</a>
-									<a href="img/gallery-02.jpg" class="swiper-slide mfp-image">
+									<a href="img/gallery-big.jpg" class="swiper-slide mfp-image">
 										<img src="img/gallery-02.jpg" alt="">
 									</a>
-									<a href="img/gallery-03.jpg" class="swiper-slide mfp-image">
+									<a href="img/gallery-big.jpg" class="swiper-slide mfp-image">
 										<img src="img/gallery-03.jpg" alt="">
 									</a>
-									<a href="img/gallery-04.jpg" class="swiper-slide mfp-image">
+									<a href="img/gallery-big.jpg" class="swiper-slide mfp-image">
 										<img src="img/gallery-04.jpg" alt="">
 									</a>
-									<a href="img/gallery-05.jpg" class="swiper-slide mfp-image">
+									<a href="img/gallery-big.jpg" class="swiper-slide mfp-image">
 										<img src="img/gallery-05.jpg" alt="">
 									</a>
 								</div>
@@ -275,14 +267,14 @@ Prestigious Provencal style villa of 300 sqm with a swimming pool, on a plot of 
 		@@include('./includes/rent2.html')
 		
 		
-		<div class="o-wrap o-wrap--base">
+		<div class="o-wrap o-wrap--base anim anim--up">
 			<footer class="c-footer">
-			
-				<div class="c-footer__col">
+
+				<div class="c-footer__col c-footer__col--quick">
 					<h4 class="c-footer__title">Quick links</h4>
 					
 					<nav class="c-nav c-nav--footer">
-					@@include('./includes/nav.html', { "home": "is-active" })
+					@@include('./includes/nav.html')
 					</nav>
 				</div>
 

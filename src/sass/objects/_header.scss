@@ -60,15 +60,13 @@
 				width: 100%;
 			}
 		}
-/*
+
 		
 		@media screen and ( max-width: $smartphone_portrait + px ) {
 			display: block;
 			padding: 0;
-			width: 100%;
-			background: red;
 		}
-*/
+
 		
 		&--text {
 			@media screen and ( max-width: $tablet_portrait + px ) {
@@ -95,5 +93,9 @@
 		padding: 0 15px;
 		background-color: $c-black;
 		color: white;
+		
+		@media screen and ( max-width: $smartphone_portrait + px ) {
+			display: inline-block;
+		}
 	}	
 }

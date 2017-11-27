@@ -19,10 +19,10 @@
     "jquery": "^3.1.1",
     "classie": "^1.0.1",
     "jquery-nice-select": "^1.1.0",
-    "validate": "validate.js#^0.11.1",
     "swiper": "^4.0.6",
     "loadcss": "^1.3.1",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "parsleyjs": "^2.8.0"
   },
   "overrides": {
     "outlayer": {

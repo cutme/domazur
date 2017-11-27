@@ -1,0 +1,22 @@
+.parsley-errors-list {
+	&.filled {
+		
+		.parsley-type,
+		.parsley-required {
+			font-size: 12px;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			color: red;
+		}
+		
+		
+		.o-form__row--field & {
+			
+		}
+		
+		.parsley-type,
+		.parsley-required {
+		}
+	}
+}

@@ -3,14 +3,7 @@
 	margin-bottom: 130px;
 	padding: 50px 0;
 	color: black;
-	
-	&__content {
-		//width: 945px;
-		//margin: 0 auto;
-		
-		
-	}
-	
+
 	&__title,
 	&__subtitle {
 		@extend %font-serif;
@@ -32,4 +25,7 @@
 		color: $c-gray-6;
 	}
 
+	.is-hidden {
+		display: none;
+	}
 }
