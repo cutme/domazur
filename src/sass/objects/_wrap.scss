@@ -24,6 +24,7 @@
 
 	}
 	
+	&--carousel,
 	&--content {
 		
 		@media screen and ( min-width: $laptop + px ) {
@@ -36,14 +37,22 @@
 		
 		@media screen and ( max-width: $tablet - 1px ) {
 			max-width: 640px;
-		}
-		
+		}		
+	}
+	
+	&--content {
 		@media screen and ( max-width: $smartphone + px ) {
 			max-width: 100%;
 			padding: {
 				left: 20px;
 				right: 20px;
 			}
+		}
+	}
+	
+	&--carousel {
+		@media screen and ( max-width: $smartphone + px ) {
+			max-width: 300px;
 		}
 	}
 	

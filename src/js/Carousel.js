@@ -46,7 +46,7 @@
 				resize: function() {
 					setTimeout(function() {
 						mySwiper.update();
-					}, 100);
+					}, 200);
 				}
 			}
 		});
@@ -63,7 +63,6 @@
 		buy.addEventListener('mouseout', onMouseOut);
 
 	};
-	
 	
 	Carousel.prototype.gallery = function() {
 
