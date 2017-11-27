@@ -44,9 +44,17 @@
 			ctme.Flags.init();
 			ctme.Carousel.init();
 			ctme.Helper.nice();
-			ctme.Nav.init();
-			ctme.Search.init();
 			ctme.Helper.showOnScroll();
+			
+			setTimeout(function() {
+				ctme.Nav.init();
+				ctme.Search.init();
+				ctme.loadMore.init();
+			}, 100);
+			
+//			
+//			
+			
 
 		});
 	

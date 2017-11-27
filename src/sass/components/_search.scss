@@ -65,6 +65,10 @@
 	&__items {
 		max-width: 1000px;
 		
+		@media screen and ( max-width: 768px ) {
+			max-width: 390px;
+		}
+		
 		@media screen and ( max-width: 680px ) {
 			display: none;
 			width: 100%;			
@@ -116,6 +120,8 @@
 		align-items: center;
 		margin-top: -15px;
 		padding: 0 20px;
+		
+		
 		
 		br {
 			@media screen and ( max-width: 680px ) {

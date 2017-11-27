@@ -25,12 +25,7 @@
 	}
 	
 	&__col {
-
-		&--follow {
-			@media screen and ( max-width: $tablet + px ) {
-				display: none;
-			}
-		}
+		flex-shrink: 1;
 
 		@media screen and ( max-width: $tablet + px ) {
 			

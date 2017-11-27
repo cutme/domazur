@@ -8,7 +8,6 @@
 
 	Carousel.prototype.buySwiper = function() {	
 		var mySwiper = new Swiper (buy, {
-			autoplay: true,
 			autoplay: {
 				delay: 2500,
 			},
