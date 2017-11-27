@@ -9,19 +9,28 @@
 		var body = document.getElementsByTagName('body')[0],
 			container = document.getElementsByClassName('js-container')[0],
 			el = document.getElementById('menu1'),
-			elDefPos = el.getBoundingClientRect().top,
+			//elDefPos = el.getBoundingClientRect().top,
 			status = false,
-			animThis;
+			animThis,
+			topMargin = 200;
 
 		var fixElInit = function() {	
 		
 			var windowWidth = window.innerWidth;
+			
+			if (windowWidth < 1024) {
+				topMargin = 170;
+			} else {
+				topMargin = 200;
+			}
 
 			if (windowWidth > 768) {
 				
 				var windowScrollPosition = window.pageYOffset || window.scrollY;
 				
-				if (windowScrollPosition >= elDefPos + 70) {
+				//alert(windowScrollPosition + ' / ' + (Math.abs(elDefPos + 70)));
+				
+				if (windowScrollPosition >= topMargin) {
 					if (status !== true) {
 						classie.add(body, 'u-navfixed');
 						classie.add(el, 'is-fixed');
@@ -33,8 +42,9 @@
 						status = true;
 					}
 				}
+
 			
-				if (windowScrollPosition < elDefPos) {
+				if (windowScrollPosition < topMargin) {
 					if (status !== false) {
 					
 						clearTimeout(animThis);
