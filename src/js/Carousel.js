@@ -3,7 +3,8 @@
 	
 	var Carousel = ctme.Carousel = function () { },
 		buy = document.getElementById('buy'),
-		partners = document.getElementById('partners');
+		partners = document.getElementById('partners'),
+		main = document.getElementById('mainSwiper');
 
 
 	Carousel.prototype.buySwiper = function() {	
@@ -89,6 +90,17 @@
 
 		galleryTop.controller.control = galleryThumbs;
 		galleryThumbs.controller.control = galleryTop;	
+	};
+	
+	Carousel.prototype.mainSwiper = function() {	
+		var mySwiper = new Swiper (main, {
+			autoplay: {
+				delay: 4500,
+			},
+			loop: true,
+			slidesPerView: 1,
+			speed: 400			
+		});
 	};
 	
 	
@@ -179,6 +191,10 @@
 			ctme.Carousel.buySwiper();
 		}
 		
+		if (document.body.contains(main)) {
+			ctme.Carousel.mainSwiper();
+		}
+		
 		if (document.body.contains(partners)) {
 			ctme.Carousel.partnersSwiper();
 		}
@@ -187,6 +203,7 @@
 			ctme.Carousel.gallery();
 		}
 	};
+
 
 	ctme.Carousel = new Carousel();	
 
