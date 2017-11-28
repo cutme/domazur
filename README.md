@@ -1,3 +1,3 @@
-# Cutme.pl
-Live: [cutme.pl](http://cutme.pl)
+# domazur
+Live: [domazur](http://cutme.github.ui/web)
 
