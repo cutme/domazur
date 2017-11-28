@@ -1,3 +1,3 @@
 # domazur
-Live: [domazur](http://cutme.github.ui/domazur/web)
+Live: [domazur](http://cutme.github.io/domazur/web)
 
